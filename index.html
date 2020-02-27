@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header__fon">
+	<header>
 		<div class="container">
 			<div class="header__wrap">
 				<div class="header-top">
@@ -27,17 +27,21 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="container-fluid">
 			<nav>
-				<ul class="nav-top__items">
-					<li class="nav-top__item active"><a href="#">Услуги</a></li>
-					<li class="nav-top__item"><a href="#">Отзывы</a></li>
-					<li class="nav-top__item"><a href="#">Гарантии</a></li>
-					<li class="nav-top__item"><a href="#">О нас</a></li>
-					<li class="nav-top__item"><a href="#">Схема работы</a></li>
-					<li class="nav-top__item"><a href="#">Контакты</a></li>
-				</ul>
+					<ul class="nav-top__items">
+						<li class="nav-top__item active"><a href="#">Услуги</a></li>
+						<li class="nav-top__item"><a href="#">Отзывы</a></li>
+						<li class="nav-top__item"><a href="#">Гарантии</a></li>
+						<li class="nav-top__item"><a href="#">О нас</a></li>
+						<li class="nav-top__item"><a href="#">Схема работы</a></li>
+						<li class="nav-top__item"><a href="#">Контакты</a></li>
+					</ul>
 			</nav>
-			<div class="header-main">
+		</div>
+		<div class="container">
+			<div class="header-main__wrap">
 				<div class="header-main__desc">
 					<h1><span>Помощь в покупке</span> авто с пробегом</h1>
 					<p>С юридической проверкой, полной диагностикой и гарантией по договору</p>
@@ -46,22 +50,21 @@
 						<li>Сэкономьте время (<span>от 2 часов до 7 дней</span> подберем оптимальное Авто)</li>
 					</ul>
 				</div>
-				<div class="form-main">
+				<div class="form__header form-main">
 					<p class="form-main__title">Узнайте стоимость подбора прямо сейчас!</p>
 					<form action="#" id="form" class="form">
 						<input type="text" name="name" id="name">
 						<input type="tel" class="tel" name="phone" id="phone">
-						<button type="submit">Узнасть стоимость</button>
+						<button class="button button__form" type="submit">Узнасть стоимость</button>
 						<input type="checkbox" name="check" id="check">
 						<p>Я согласен с политикой обработки персональных данных</p>
 					</form>
-
 				</div>
 			</div>
 		</div>
 	</header>
 	<div class="section stat">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="stat__wrap">
 				<div class="stat__item">
 					<p class="stat__title">510 000р</p>
@@ -87,7 +90,7 @@
 			<div class="friends__wrap">
 				<h2>Приведи друга и <span>получи 5000р</span></h2>
 				<p class="friends__main">В нашей компании с каждого	приведенного друга можно получить 5000 рублей по услуге автоподбор</p>
-				<a href="#">Получи бесплатную консультацию</a>
+				<a href="#" class="button button__main">Получи бесплатную консультацию</a>
 			</div>
 		</div>
 	</section>
@@ -148,9 +151,284 @@
 			</div>
 		</div>
 	</section>
+	<section class="legal">
+		<div class="container">
+			<div class="legal__wrap">
+				<div class="legal__content">
+					<h2><span>Юридическая проверка</span> чистоты автомобиля</h2>
+					<p class="legal__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloribus officia vero facilis perferendis expedita, exercitationem necessitatibus perspiciatis corporis sed!</p>
+					<a href="#" class="button button__main">Проверить документы авто</a>
+				</div>
+				<div class="legal__items">
+					<ul>
+						<li>База ГИБДД</li>
+						<li>Банки</li>
+						<li>Судебные приставки</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
+	</section>
+	<section class="send-request">
+		<div class="container">
+			<div class="send-request__wrap">
+				<div class="send-request__img"></div>
+				<div class="send-request__form">
+					<h2><span>Оставьте заявку</span> и получите скидку 20%</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, provident.</p>
+					<form action="#" id="form" class="form">
+						<input type="text" name="name" id="name">
+						<input type="tel" class="tel" name="phone" id="phone">
+						<button class="button button__form" type="submit">Оставить заявку</button>
+						<input type="checkbox" name="check" id="check">
+						<p>Я согласен с политикой обработки персональных данных</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="feedback">
+		<div class="container">
+			<div class="feedback__wrap">
+				<h2>Отзывы наших клиентов</h2>
+				<p>Lorem <span>ipsum dolor sit</span> amet consectetur adipisicing.</p>
+				<div class="feedback__items">
+					<div class="feedback__item">
+						<div class="feedback__video">
 
-	<footer></footer>
+						</div>
+						<div class="feedback__desc">
+							<p class="feedback__title">Адептин Сергей</p>
+							<ul class="feedback__list">
+								<li>Модель авто</li>
+								<li>Модель авто</li>
+								<li>Модель авто</li>
+								<li>Модель авто</li>
+								<li>Модель авто</li>
+								<li>Модель авто</li>
+								<li>Модель авто</li>
+								<li>Модель авто</li>
+							</ul>
+							<p>Сумма торга: <span>25к рублей</span></p>
+							<p>Услуга подбора окупилась на <span>120%</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="warranty">
+		<div class="container">
+			<div class="warranty__wrap">
+				<h2>Хотите получить <span>подержанный авто с гарантией</span> как у нового?</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				<div class="warranty__items">
+					<div class="warranty__item">
+						<span class="warranty__logo"></span>
+						<p class="warranty__desc"></p>
+					</div>
+					<div class="warranty__item">
+						<span class="warranty__logo"></span>
+						<p class="warranty__desc"></p>
+					</div>
+					<div class="warranty__item">
+						<span class="warranty__logo"></span>
+						<p class="warranty__desc"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="overpayment">
+		<div class="container">
+			<div class="overpayment__wrap">
+				<h2>Боитесь переплатить <span>за подержанный автомобиль?</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+				</ul>
+				<div class="overpayment__buttom">
+					<a href="#" class="button button__main">Оставить заявку</a>
+					<p>от <span>11000 руб</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="card">
+		<div class="container">
+			<div class="card__wrap">
+				<div class="card__items">
+					<div class="card__item">
+						<div class="card__img"></div>
+						<div class="card__content">
+							<h3 class="card__title">Автоэксперт на день</h3>
+							<p class="card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odit iusto accusamus ducimus ab quas sit, doloribus voluptatum eos nihil?</p>
+							<p class="card__price">от 7 000 руб</p>
+							<a href="#" class="button button__main">Узнать стоимость</a>
+						</div>
+					</div>
+					<div class="card__item">
+						<div class="card__img"></div>
+						<div class="card__content">
+							<h3 class="card__title">Автоэксперт на день</h3>
+							<p class="card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odit iusto accusamus ducimus
+								ab quas sit, doloribus voluptatum eos nihil?</p>
+							<p class="card__price">от 7 000 руб</p>
+							<a href="#" class="button button__main">Узнать стоимость</a>
+						</div>
+					</div>
+					<div class="card__item">
+						<div class="card__img"></div>
+						<div class="card__content">
+							<h3 class="card__title">Автоэксперт на день</h3>
+							<p class="card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odit iusto accusamus ducimus
+								ab quas sit, doloribus voluptatum eos nihil?</p>
+							<p class="card__price">от 7 000 руб</p>
+							<a href="#" class="button button__main">Узнать стоимость</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bargaining">
+		<div class="container">
+			<div class="bargaining__wrap">
+				<h2><span>В 96% случаях</span> наши услуги окупаются за счет торга с продавцом автомобиля</h2>
+				<p class="bargaining__desc"></p>
+				<p class="bargaining__price"></p>
+				<a href="#" class="button button__main">Узнать стоимость</a>
+			</div>
+		</div>
+	</section>
+	<section class="risk">
+		<div class="container">
+			<div class="risk__wrap">
+				<h2>Покупая авто самостоятельно <span>вы рискуете</span></h2>
+				<div class="risk__items">
+					<div class="risk__item">
+						<p class="risk__title"></p>
+						<p class="risk__desc"></p>
+					</div>
+					<div class="risk__item">
+						<p class="risk__title"></p>
+						<p class="risk__desc"></p>
+					</div>
+					<div class="risk__item">
+						<p class="risk__title"></p>
+						<p class="risk__desc"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="secret">
+		<div class="container">
+			<div class="secret__wrap">
+				<h2>Раскрываем тайны рынка подержанных авто</h2>
+				<div class="secret__main">
+					<div class="secret__tabs">
+					</div>
+					<div class="secret__form form-main">
+						<p class="form-main__title">Узнайте стоимость подбора прямо сейчас!</p>
+						<form action="#" id="form" class="form">
+							<input type="text" name="name" id="name">
+							<input type="tel" class="tel" name="phone" id="phone">
+							<button class="button button__form" type="submit">Узнасть стоимость</button>
+							<input type="checkbox" name="check" id="check">
+							<p>Я согласен с политикой обработки персональных данных</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="secret__items">
+				<div class="secret__item">
+					<p class="secret__item-title">8%</p>
+					<p class="secret__item-desc">Авто "Утопленники"</p>
+				</div>
+				<div class="secret__item">
+					<p class="secret__item-title">8%</p>
+					<p class="secret__item-desc">Авто "Утопленники"</p>
+				</div>
+				<div class="secret__item">
+					<p class="secret__item-title">8%</p>
+					<p class="secret__item-desc">Авто "Утопленники"</p>
+				</div>
+				<div class="secret__item">
+					<p class="secret__item-title">8%</p>
+					<p class="secret__item-desc">Авто "Утопленники"</p>
+				</div>
+				<div class="secret__item">
+					<p class="secret__item-title">8%</p>
+					<p class="secret__item-desc">Авто "Утопленники"</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="time">
+		<div class="container">
+			<div class="time__wrap">
+				<h2>Экономим ваше время</h2>
+				<p>Lorem ipsum dolor sit amet consectetur <span>adipisicing.</span></p>
+				<div class="time__items">
+					<div class="time__item">
+						<p class="time__title">1. Бесплатная консультация</p>
+						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="time__item">
+						<p class="time__title">1. Бесплатная консультация</p>
+						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="time__item">
+						<p class="time__title">1. Бесплатная консультация</p>
+						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="time__item">
+						<p class="time__title">1. Бесплатная консультация</p>
+						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="time__item">
+						<p class="time__title">1. Бесплатная консультация</p>
+						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="time__item">
+						<p class="time__title">1. Бесплатная консультация</p>
+						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="choice">
+		<div class="container">
+			<div class="choice__wrap">
+				<div class="answer"></div>
+				<div class="choice__form">
+					<h2>Уже <span>определились с выбором</span> авто или бюджетом?</h2>
+					<p>Оставьте заявку для <span>бесплатной консультации у нашего эксперта</span></p>
+					<form action="#" id="form" class="form">
+						<input type="text" name="name" id="name">
+						<input type="tel" class="tel" name="phone" id="phone">
+						<button class="button button__form" type="submit">Оставить заявку</button>
+						<input type="checkbox" name="check" id="check">
+						<p>Я согласен с политикой обработки персональных данных</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+
+		</div>
+	</footer>
 
 <script src="./js/main.js"></script>	
 </body>

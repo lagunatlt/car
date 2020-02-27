@@ -4,7 +4,6 @@ let tab2 = document.getElementById('tab2');
 let tab3 = document.getElementById('tab3');
 let labelTab1 = document.getElementById('labelTab1');
 let labelTab2 = document.getElementById('labelTab2');
-let labelTab3 = document.getElementById('labelTab3');
 
 let tabFun = function() {
 	if (tab1.checked) {

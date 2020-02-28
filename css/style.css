@@ -11,9 +11,11 @@
 }
 body {
   max-width: 1920px;
+  margin: 0 auto;
   color: #fff;
   font-family: 'Manrope';
   font-weight: normal;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -27,18 +29,22 @@ h1 span,
 h2 span {
   color: #00ACFF;
 }
+section {
+  position: relative;
+}
 
 .container,
 .container-fluid {
   position: relative;
   padding-top: 85px;
   padding-bottom: 85px;
+  /* overflow: hidden; */
 }
 
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -58,7 +64,7 @@ h2 span {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #112447;
+  background-color: #212C4A;
   opacity: 0.95;
 }
 .section__bg-header {
@@ -69,8 +75,8 @@ h2 span {
 }
 
 .header--paddind {
-  padding-top: 53px;
-  padding-bottom: 53px;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 .header--nav-paddind {
@@ -115,10 +121,10 @@ h2 span {
 }
 
 .header-logo {
-  width: 125px;
+  width: 91px;
   height: 80px;
   display: block;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 .header-top__mess {
@@ -155,6 +161,7 @@ h2 span {
   display: flex;
   flex-direction: column;
   align-items: end;
+  margin-top: 15px;
 
 }
 .phone {
@@ -187,7 +194,7 @@ nav {
 .nav-top__items {
   display: flex;
   justify-content: space-between;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   list-style: none;
   padding-left: 15px;
@@ -208,9 +215,10 @@ nav {
 
 
 header h1 {
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 }
 .header-main__desc {
+  position: relative;
   max-width: 463px;
 }
 /* .header-main__desc span {
@@ -248,8 +256,32 @@ header h1 {
 }
 
 .header-main__wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
+}
+.header-main__wrap::before {
+  content: '';
+  position: absolute;
+  top: 63px;
+  right: -266px;
+  width: 300px;
+  height: 252px;
+  background-image: url('../img/key.png');
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.header-main__wrap::after {
+  content: '';
+  position: absolute;
+  top: -41px;
+  right: -375px;
+  width: 1010px;
+  height: 627px;
+  background-image: url('../img/car-header.png');
+  background-repeat: no-repeat;
+  z-index: -2;
 }
 .form {
   display: flex;
@@ -258,8 +290,8 @@ header h1 {
   align-items: center;
 }
 .form__header {
-  width: 440px;
-  height: 496px;
+  width: 430px;
+  height: 480px;
   margin-top: 14px;
   padding: 40px;
   background-color: #fff;
@@ -279,19 +311,27 @@ header h1 {
 .form__input {
   width: 100%;
   height: 65px;
-  margin-bottom: 25px;
+  margin-top: 53px;
+  margin-bottom: 48px;
   padding-left: 90px;
   border-radius: 5px;
-  font-size: 14px;
-  color: #333333;
-  font-weight: normal;
+  box-shadow: inset 0px 0px 11px 1px rgba(185, 185, 185, 0.5);
+  border: 1px solid #DADADA;
+  background-color: #ECECEC;
   font-family: 'Manrope';
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
 }
 .form__checkbox {
   display: inline-flex;
+  width: 278px;
 }
 .form__checkbox p {
   text-align: left;
+  margin-top: 32px;
+  margin-bottom: 46px;
+  margin-left: 20px;
 }
 .button {
   position: relative;
@@ -309,6 +349,7 @@ header h1 {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.2s;
+  z-index: 1;
 }
 .button::before {
   position: absolute;
@@ -318,7 +359,7 @@ header h1 {
   top: 0;
   left: 0;
   /* overflow: hidden; */
-  box-shadow: inset 0px 0px 9px 4px #00C7FF;
+  box-shadow: inset 0px 0px 9px 4px #3BD4FF;
   border-radius: 40px;
 }
 .button:hover {
@@ -384,20 +425,43 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 95px;
+}
+.friends__wrap::before {
+  content: '';
+  position: absolute;
+  top: 171px;
+  left: -360px;
+  width: 681px;
+  height: 560px;
+  background-image: url(../img/fr-auto-l.png);
+  background-repeat: no-repeat;
+}
+.friends__wrap::after {
+  content: '';
+  position: absolute;
+  top: 186px;
+  right: -360px;
+  width: 681px;
+  height: 560px;
+  background-image: url(../img/fr-auto-r.png);
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 .friends__main {
   position: relative;
-  max-width: 600px;
+  max-width: 686px;
   min-height: 100px;
   margin-top: 90px;
   margin-bottom: 122px;
-  padding: 30px 76px;
+  padding: 26px 116px;
   background-color: #fff;
   border-radius: 10px;
   color: #000;
   text-align: center;
   font-size: 22px;
   font-weight: 500;
+  z-index: 1;
 }
 .friends__main::before {
   content: '';
@@ -408,6 +472,9 @@ header h1 {
   height: 56px;
   border-radius: 50%;
   background-color: #33ABFF;
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-position: 17px 18px;
 }
 
 

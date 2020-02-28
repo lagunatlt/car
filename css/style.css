@@ -58,7 +58,7 @@ h2 span {
   right: 0;
   bottom: 0;
   background-color: #112447;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 .section-bg__header {
   background-image: url('../img/header.jpg');
@@ -330,6 +330,9 @@ header h1 {
   box-shadow: none;
   transition: all 0.2s;
 }
+.button__main {
+  padding: 0 40px;
+}
 /* ------------- */
 .stat__wrap {
   display: flex;
@@ -371,7 +374,34 @@ header h1 {
   padding: 28px 22px;
 }
 
-
+/* ------------------- */
+.friends__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.friends__main {
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 122px;
+  padding: 30px 120px;
+  min-height: 100px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+}
+.friends__main::before {
+  content: '';
+  position: absolute;
+  top: -39px;
+  left: calc(50% - 28px);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #33ABFF;
+}
 
 
 
@@ -398,8 +428,6 @@ header h1 {
 .tabs {
   min-width: 320px;
   max-width: 1034px;
-  padding: 0px;
-  margin: 0 auto;
 }
 
 .section-tab {

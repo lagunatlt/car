@@ -976,3 +976,12 @@ header h1 {
 .warranty__desc {
   text-align: center;
 }
+/* ------------------- */
+
+.overpayment__wrap {
+  width: 731px;
+}
+.overpayment__buttom span {
+  font-size: 26px;
+  color: #00ACFF;
+}

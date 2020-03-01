@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="section__bg section__bg-header">
+	<header class="section__bg section__bg-header" id="#">
 		<div class="container header--paddind">
 			<div class="header__wrap">
 				<div class="header-top">
@@ -33,12 +33,12 @@
 		<div class="container-fluid header--nav-paddind">
 			<nav>
 					<ul class="nav-top__items">
-						<li><a href="#" class="nav-top__item active">Услуги и цены</a></li>
-						<li><a href="#" class="nav-top__item">Отзывы</a></li>
-						<li><a href="#" class="nav-top__item">Гарантии</a></li>
-						<li><a href="#" class="nav-top__item">О нас</a></li>
-						<li><a href="#" class="nav-top__item">Схема работы</a></li>
-						<li><a href="#" class="nav-top__item">Контакты</a></li>
+						<li><a href="#" class="nav-top__item active" data-value="#">Услуги и цены</a></li>
+						<li><a href="#" class="nav-top__item" data-value="#">Отзывы</a></li>
+						<li><a href="#" class="nav-top__item" data-value="#">Гарантии</a></li>
+						<li><a href="#" class="nav-top__item" data-value="#">О нас</a></li>
+						<li><a href="#" class="nav-top__item" data-value="#">Схема работы</a></li>
+						<li><a href="#" class="nav-top__item" data-value="#">Контакты</a></li>
 					</ul>
 			</nav>
 		</div>
@@ -421,25 +421,73 @@
 			</div>
 		</div>
 	</section>
-	<section class="secret section__bg">
-		<div class="container">
+	<section class="secret section__bg section__bg-secret">
+		<div class="container container-pb">
 			<div class="secret__wrap">
 				<h2>Раскрываем тайны рынка подержанных авто</h2>
 				<div class="secret__main">
 					<div class="secret__tabs">
+						<!-- <div class="secret__tabs-item" id="secret1"> -->
+							<!-- <div class="secret__tabs-label" id="secret1">Как меня могут обмануть при покупке подержанного авто?</div>
+							<div class="secret__tabs-content" id="secret2">
+								<p>Среди объявлений можно найти любопытные. Цена за авто в этих объявлениях
+								значительно ниже других. Продавцы часто объясняют это необходимостью
+								срочной продажи авто - якобы нужны деньги, поэтому и стоит так дешево.
+								Но чудес не бывает и в реальности такие объявления предлагают
+								востановленные авто после крупного ДТП, «утопленников», распилы,
+								авто со скрытыми техническими дефектами или краденные</p></div> -->
+								<div class="accordion">Как меня могут обмануть при покупке подержанного авто?</div>
+								<div class="accordion-content">
+									<p>Среди объявлений можно найти любопытные. Цена за авто в этих объявлениях
+									значительно ниже других. Продавцы часто объясняют это необходимостью
+									срочной продажи авто - якобы нужны деньги, поэтому и стоит так дешево.
+									Но чудес не бывает и в реальности такие объявления предлагают
+									востановленные авто после крупного ДТП, «утопленников», распилы,
+									авто со скрытыми техническими дефектами или краденные.
+									</p>
+								</div>
+								<div class="accordion">Правда ли что вы собьете цену при покупке авто?</div>
+								<div class="accordion-content">
+									<p>Внешне автомобиль может не вызывать сомнений, но если углубиться
+									и раскопать все, что скрывает продавец, то можно найти ряд параметров,
+									зацепившись за которые в большинстве случаев удается добиться обоснованного
+									снижения цены. Продавцы не глупы и дают скидку, понимая, что скрыть найденные
+									изъяны авто и продать его по завышенной цене им теперь не удастся
+									</p>
+								</div>
+								<div class="accordion">Сколько в среднем уходит времени
+								на подбор и покупку авто?</div>
+								<div class="accordion-content">
+									<p>Самый быстрый подбор автомобиля мы произвели за 2 часа. Да и такое бывает!
+									Часто подбор авто не длится более 7 дней, т.к у нас имеется большой опыт работы
+									и много специалистов, которые готовы вам помочь.
+									</p>
+								</div>
+								<div class="accordion">Можно ли купить автомобиль,
+								не требующий вложений?</div>
+								<div class="accordion-content">
+									<p>Да можно. Мы бы даже сказали - нужно! Но нужно понимать, что около 60%
+									автомобилей с пробегом продаются в связи с грядущим ремонтом.
+									Таким образом, нынешний собственник хочет сэкономить свои средства, а еще
+									лучше приумножить их за счет продажи. Поэтому поддержанные автомобили
+									требуют особого внимания!
+									</p>
+								</div>
+						<!-- </div> -->
+
 					</div>
 					<div class="form__header">
 						<p class="form-main__title">Узнайте стоимость подбора прямо сейчас!</p>
 						<form action="#" id="form" class="form">
 							<input type="tel" class="form__input tel" name="phone" id="phone" placeholder="Введите ваш телефон">
-							<button class="button button__form" type="submit">Узнасть стоимость</button>
+							<button class="button button__form" type="submit">Узнать стоимость</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- <div class="section stat"> -->
-			<div class="container-fluid">
+			<div class="container-fluid container-pt">
 				<div class="stat__wrap stat-secret">
 					<div class="stat__item stat-secret__item">
 						<p class="stat__title">8%</p>
@@ -469,31 +517,43 @@
 		<div class="container">
 			<div class="time__wrap">
 				<h2>Экономим ваше время</h2>
-				<p>Lorem ipsum dolor sit amet consectetur <span>adipisicing.</span></p>
+				<p>Посмотрите, как легко приобрести авто <span>в отличном состоянии</span></p>
 				<div class="time__items">
 					<div class="time__item">
 						<p class="time__title">1. Бесплатная консультация</p>
-						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p class="time__desc">Оставьте заявку или позвоните нам и
+						получите ответы на все ваши вопросы</p>
 					</div>
 					<div class="time__item">
-						<p class="time__title">1. Бесплатная консультация</p>
-						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p class="time__title">2. Подписание
+						договора</p>
+						<p class="time__desc">Ознакомьтесь с договором, вашими
+						гарантиями и оплатой наших услуг
+						(можно удаленно).</p>
 					</div>
 					<div class="time__item">
-						<p class="time__title">1. Бесплатная консультация</p>
-						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p class="time__title">3. Поиск и
+						подбор авто</p>
+						<p class="time__desc">Подберем варианты авто по
+						вашим параметрам или предложим
+						свои варианты по вашему бюджету</p>
 					</div>
 					<div class="time__item">
-						<p class="time__title">1. Бесплатная консультация</p>
-						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p class="time__title">4. Проверка
+						авто</p>
+						<p class="time__desc">С вашим участием или без мы проверим
+						авто по 147 пунктам. Вы получаете
+						подробный отчет</p>
 					</div>
 					<div class="time__item">
-						<p class="time__title">1. Бесплатная консультация</p>
-						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p class="time__title">5. Покупка</p>
+						<p class="time__desc">Помогаем с оформлением сделки,
+						проверяем правильность документов</p>
 					</div>
 					<div class="time__item">
-						<p class="time__title">1. Бесплатная консультация</p>
-						<p class="time__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p class="time__title">6. Гарантии</p>
+						<p class="time__desc">Вы получите тройную гарантию
+						на выбранный автомобиль</p>
 					</div>
 				</div>
 			</div>
@@ -502,10 +562,16 @@
 	<section class="choice section__bg">
 		<div class="container">
 			<div class="choice__wrap">
-				<div class="answer"></div>
+				<div class="answer">
+					<p>
+						Получите <span>ответы на любые вопросы связанные
+						с рынком</span> авто на данное время. Кроме того,
+						цену на наши услуги сторгуем у продавца авто!
+					</p>
+				</div>
 				<div class="choice__form form-main">
 					<h2>Уже <span>определились с выбором</span> авто или бюджетом?</h2>
-					<p>Оставьте заявку для <span>бесплатной консультации у нашего эксперта</span></p>
+					<p>Оставьте заявку для <span>бесплатной консультации</span> у нашего эксперта</p>
 					<form action="#" id="form" class="form">
 						<input type="tel" class="form__input form__input-w tel" name="phone" id="phone" placeholder="Введите ваш телефон">
 						<button class="button button__main-form" type="submit">Оставить заявку</button>
@@ -517,7 +583,25 @@
 
 	<footer>
 		<div class="container">
-
+			<div class="footer-menu__wrap">
+				<div class="footer-menu__bottom">
+					<div class="footer-bottom__logo">
+						<!-- <div class="logo__wrap"> -->
+						<a href="#"><img src="img/f-logo.png" class="footer-menu-logo" alt="автоподбор"></a>
+						<p>Подбор и полная диагностика авто в Санкт-Петербурге и Лен. области</p>
+						<!-- </div> -->
+					</div>
+					<div class="footer-menu__mess">
+						<p>Нажмите, чтобы связаться с нами через мессенджеры</p>
+						<a href="#" class="viber"></a>
+						<a href="#" class="whatsapp"></a>
+					</div>
+					<div class="footer-menu__phone">
+						<a href="tel:+79819585552" class="footer-phone">+7 (981) 958-55-52</a>
+						<a href="#" class="footer-phone__link">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 <script src="./js/jq341.js"></script>

@@ -95,40 +95,40 @@ for (let i = 0; i < accordions.length; i++) {
 }
 
 /* --------------------- */
-let modalTitle = document.getElementById('modal-title')
-console.log(modalTitle);
+let modalTitle = document.getElementById('modal-title');
 let buttonClick = document.getElementsByClassName('button-click');
-console.log(modalTitle);
-console.log(buttonClick[0].textContent);
+
 let title = function() {
-
-}
-for (let i = 0; i < buttonClick.length; i++) {
-	buttonClick[i].addEventListener('click', function() {
-		modalTitle.textContent = buttonClick[i].textContent
-	})
-}
-
-// ---------------
-
-// let contenttab3 = document.getElementById('content-tab3')
-// console.log(contenttab3)
-
+	for (let i = 0; i < buttonClick.length; i++) {
+		buttonClick[i].addEventListener('click', function() {
+			modalTitle.textContent = buttonClick[i].textContent
+		})
+	}
+};
+title();
+/* -----------tooltips-------- */
 let tooltips = document.getElementsByClassName("tooltip");
 
-console.log(tooltips);
-
-for (let i = 0; i < tooltips.length; i++) {
-	tooltips[i].onclick = function () {
-		this.classList.toggle('is-opens');
-		// this.classList.toggle('rotate');
-
-		let tooltipsContent = this.firstElementChild;
-		if (tooltipsContent.style.maxHeight) {
-			tooltipsContent.style.maxHeight = null;
-		} else {
-			tooltipsContent.style.maxHeight = tooltipsContent.scrollHeight + 22 + "px";
-			console.log(tooltipsContent.scrollHeight);
-		}
+let tooltipsClick = function() {
+	for (let i = 0; i < tooltips.length; i++) {
+		tooltips[i].onclick = function() {
+			this.classList.toggle('is-opens');
+	
+			let tooltipsContent = this.firstElementChild;
+			if (!tooltips[i].classList.contains('is-opens')) {
+				tooltipsContent.style.opacity = '0';
+				setTimeout(function() {
+					tooltipsContent.style.display = 'none';
+				}, 301)
+			} else {
+				tooltipsContent.style.display = 'block';
+				setTimeout(function () {
+					tooltipsContent.style.opacity = '1';
+				}, 1)
+	
+			}
+		};
 	}
-}
+};
+tooltipsClick();
+/* -----------tooltips-end------- */

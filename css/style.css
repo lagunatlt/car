@@ -192,6 +192,7 @@ section {
 .phone__link:hover {
   color: #00ACFF;
   border-color: #00ACFF;
+  transition: all 0.2s;
 }
 
 nav {
@@ -530,11 +531,8 @@ header h1 {
   position: relative;
   width: 100%;
 }
-.tooltip {
-  /* display: none; */
+/* .tooltip {
   position: absolute;
-  /* top: 189px;
-  right: 254px; */
   background-color: #fff;
   width: 293px;
   font-size: 14px;
@@ -543,18 +541,53 @@ header h1 {
   text-align: center;
   box-shadow: 0 3px 30px #40404061;
   user-select: none;
-}
-.tooltip-item1 {
+} */
+/* .tooltip-item1 {
   top: 189px;
   right: 254px;
-}
-.tooltip-item2 {
+} */
+/* .tooltip-item2 {
   top: 138px;
   right: 254px;
-}
-.tooltip-item3 {
+} */
+/* .tooltip-item3 {
   top: 189px;
   right: 254px;
+} */
+
+.tooltip {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  /* height: 0; */
+}
+.tooltip::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  width: 46px;
+  height: 46px;
+  background-image: url(../img/item-tooltip.svg);
+  background-repeat: no-repeat;
+  background-size: 46px;
+}
+.tooltip-content {
+  max-height: 0;
+  /* display: none; */
+  overflow: hidden;
+  background-color: #fff;
+  width: 293px;
+  font-size: 14px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 30px #40404061;
+  user-select: none;
+  transition: all 0.3s ease-out;
+}
+.is-opens .tooltip-content {
+  padding: 11px 15px;
+  /* min-height: 200px; */
 }
 .tabs {
   position: relative;
@@ -570,6 +603,7 @@ header h1 {
   background: #fff;
 }
 .section-tab__item {
+  position: relative;
   /* margin-top: 50px; */
   max-width: 100%;
   margin: 0 auto;
@@ -1510,7 +1544,22 @@ footer {
 }
 .footer-menu__wrap a:hover {
   color: #fff;
+  transition: all 0.2s;
 }
 .footer-phone__link:hover {
   border-bottom: 1px solid #fff;
+  transition: all 0.2s;
 }
+
+/* --------fansy------------ */
+.fancybox-content {
+  padding: 0;
+}
+
+.fancybox-close-small {
+  background: gray;
+}
+.form__modal {
+  padding: 58px 25px;
+}
+/* ------------------------------ */

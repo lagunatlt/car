@@ -5,9 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Автоподбор</title>
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="modal-content" id="hidden-content" style="display: none;">
+		<div class="form__header form__header-bg form__modal">
+			<p class="form-main__title" id="modal-title">Узнайте стоимость подбора</p>
+			<p class="form-main__title">прямо сейчас!</p>
+			<form action="#" id="form" class="form">
+				<input type="tel" class="form__input tel" name="phone" id="phone" placeholder="Введите ваш телефон">
+				<button class="button button__form" type="submit">Заказать звонок</button>
+			</form>
+		</div>
+	</div>
 	<header class="section__bg section__bg-header" id="#">
 		<div class="container header--paddind">
 			<div class="header__wrap">
@@ -25,7 +36,7 @@
 					</div>
 					<div class="header-top__phone">
 						<a href="tel:+79819585552" class="phone">+7 (981) 958-55-52</a>
-						<a href="#" class="phone__link">Заказать звонок</a>
+						<a href="#" class="phone__link" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -89,7 +100,7 @@
 			<div class="friends__wrap">
 				<h2>Приведи друга и <span>получи 5000р</span></h2>
 				<p class="friends__main">В нашей компании с каждого	приведенного друга можно получить 5000 рублей по услуге автоподбор</p>
-				<a href="#" class="button button__main">Получи бесплатную консультацию</a>
+				<a href="#" class="button button__main button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Получи бесплатную консультацию</a>
 			</div>
 		</div>
 	</section>
@@ -108,20 +119,118 @@
 							<label for="tab3" id="labelTab3">Юридическая проверка</label>
 						<div class="section-tab" id="content-tab1">
 							<div class="section-tab__item focus">
-								<img src="img/check-item1.png" alt="Внешний осмотр">
-								<div class="tooltip tooltip-item1">Внешний осмотр AirBag, проверка отсутсвия повреждений, а также на
-									наличие их полной комплектности
+								<img src="img/check-item3.png" alt="Внешний осмотр">
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка заводской
+									жесткости кузова</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Исследование кузова
+									на предмет ДТП</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка ремней безопасности
+									на исправность работы и на
+									соответствие автомобилю</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Исследование кузова на наличие
+									незаводских кузовных элементов</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Исследование кузова на наличие
+									незаводских кузовных элементов</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Обнаружение применения
+									незаводской обработки металла</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Внешний осмотр AirBag, проверка
+									отсутсвия повреждений, а также на
+									наличие их полной комплектности</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка ЛКП на
+									наличие дефектов</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка силовой конструкции
+									кузова на наличие вмешательств</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Поиск нештатных
+									швов и крепежей</p>
 								</div>
 							</div>
 						</div>
 						<div class="section-tab" id="content-tab2">
 							<div class="section-tab__item focus">
 								<img src="img/check-item2.png" alt="Внешний осмотр">
-								<div class="tooltip tooltip-item2">Проверка электроники и
-								контрольно-измерительных приборов
-								на адекватность работы с помощью
-								компьютерной диагностики
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка колес на соответствие
+									размерности шины, на равномерность
+									износа, определение месяца и
+									года выпуска резины</p>
 								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка систем безопасности,
+									включая AirBag, на правильность
+									работы и соотвествие заводским
+									нормам с помощью компьютерной
+									диагностики</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка АКПП с использованием
+									компьютерного модуля</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Диагностика трансмиссии</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка МКПП и ее
+									составляющих на износ</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка тормозной системы
+									на износ и соответствие заводским
+									нормам</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Диагностика подвески, определение
+									степени износа ее составляющих</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка впуска\выпуска</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка системы охлаждения</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Диагностика рулевого управления
+									по средствам тест-драйва и
+									подключения модуля проверки ЭБУ</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка ДВС с использованием
+									оригинального сертифицированного
+									оборудование, а также с применением
+									методов дефектовки агрегата</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Диагностика турбины</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка АКБ с
+									использованием тестера</p>
+								</div>
+								<div class="tooltip">
+									<p class="tooltip-content">Проверка электроники и
+									контрольно-измерительных приборов
+									на адекватность работы с помощью
+									компьютерной диагностики</p>
+								</div>
+								
 							</div>
 						</div>
 						<div class="section-tab" id="content-tab3">
@@ -169,7 +278,7 @@
 					которых не знает, если авто находилось в пользовании до него.
 					Юридическая проверка авто перед покупкой убережет вас от
 					будущих проблем с законом.</p>
-					<a href="#" class="button button__main">Проверить документы авто</a>
+					<a href="#" class="button button__main button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Проверить документы авто</a>
 				</div>
 				<div class="legal__items">
 					<ul>
@@ -210,7 +319,7 @@
 				<div class="feedback__items">
 					<div class="feedback__item">
 						<div class="feedback__video video-item1">
-							<a href="#" class="video-link"></a>
+							<a class="video-link" data-fancybox href="https://youtu.be/86IJPHysuM4"></a>
 						</div>
 						<div class="feedback__desc">
 							<p class="feedback__title">Адептин Сергей</p>
@@ -221,7 +330,7 @@
 								<li>Владельцев по ПТС: 2</li>
 								<li>Результат проверки: Отличное состояние,
 								крашеные элементы отстутствуют</li>
-								<li>Машина после ТО</li>
+								<li>Машина после ТО: да</li>
 								<li>Начальная стоимость: 850 000</li>
 								<li>Конечная стоимость: 770 000</li>
 							</ul>
@@ -231,18 +340,18 @@
 					</div>
 					<div class="feedback__item">
 						<div class="feedback__video video-item2">
-							<a href="#" class="video-link"></a>
+							<a class="video-link" data-fancybox href="https://youtu.be/DqImo3sKDQU"></a>
 						</div>
 						<div class="feedback__desc">
-							<p class="feedback__title">Адептин Сергей</p>
+							<p class="feedback__title">Диана</p>
 							<ul class="feedback__list">
-								<li>Модель авто: Мерседес С класс</li>
+								<li>Модель авто: Ниссан жук</li>
 								<li>Год выпуска: 2012</li>
 								<li>На поиск ушло: 2 дня</li>
-								<li>Владельцев по ПТС: 2</li>
+								<li>Владельцев по ПТС: 1</li>
 								<li>Результат проверки: Отличное состояние,
-									крашеные элементы отстутствуют</li>
-								<li>Машина после ТО</li>
+								косметический окрас крыло и дверь</li>
+								<li>Машина после ТО: да</li>
 								<li>Начальная стоимость: 850 000</li>
 								<li>Конечная стоимость: 770 000</li>
 							</ul>
@@ -252,20 +361,20 @@
 					</div>
 					<div class="feedback__item">
 						<div class="feedback__video video-item3">
-							<a href="#" class="video-link"></a>
+							<a class="video-link" data-fancybox href="https://youtu.be/kwYQrfEdyJk"></a>
 						</div>
 						<div class="feedback__desc">
-							<p class="feedback__title">Адептин Сергей</p>
+							<p class="feedback__title">Дмитрий Камшилов</p>
 							<ul class="feedback__list">
-								<li>Модель авто: Мерседес С класс</li>
-								<li>Год выпуска: 2012</li>
-								<li>На поиск ушло: 2 дня</li>
-								<li>Владельцев по ПТС: 2</li>
+								<li>Модель авто: Акура РДХ</li>
+								<li>Год выпуска: 2006</li>
+								<li>На поиск ушло: 1 день</li>
+								<li>Владельцев по ПТС: 3</li>
 								<li>Результат проверки: Отличное состояние,
 									крашеные элементы отстутствуют</li>
-								<li>Машина после ТО</li>
-								<li>Начальная стоимость: 850 000</li>
-								<li>Конечная стоимость: 770 000</li>
+								<li>Машина после ТО: нет</li>
+								<li>Начальная стоимость: 750 000</li>
+								<li>Конечная стоимость: 600 000</li>
 							</ul>
 							<p class="feedback__footer">Сумма торга: <span>25к рублей</span></p>
 							<p class="feedback__footer">Услуга подбора окупилась на <span>120%</span></p>
@@ -315,7 +424,7 @@
 					<li>Кросс-проверка с участием 2 независимых экспертов</li>
 				</ul>
 				<div class="overpayment__buttom">
-					<a href="#" class="button button__main">Оставить заявку</a>
+					<a href="#" class="button button__main button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Оставить заявку</a>
 					<p>от <span>11000 руб</span></p>
 				</div>
 			</div>
@@ -337,7 +446,7 @@
 							объявлений и мошенников. Неограниченное
 							количество просматриваемых машин</p>
 							<p class="card__price">от 7 000 руб</p>
-							<a href="#" class="button button__card">Узнать стоимость</a>
+							<a href="#" class="button button__card button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Узнать стоимость</a>
 						</div>
 					</div>
 					<div class="card__item">
@@ -353,7 +462,7 @@
 							сделки купли/продажи авто с анализом
 							правильности составленных документов.</p>
 							<p class="card__price">0 руб</p>
-							<a href="#" class="button button__card">Получить консультацию</a>
+							<a href="#" class="button button__card button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 						</div>
 					</div>
 					<div class="card__item">
@@ -369,7 +478,7 @@
 							покупки. Аргументированный торг с продавцом
 							Проверка по базам ГИБДД и залоговых обязательств</p>
 							<p class="card__price">от 2 000 руб</p>
-							<a href="#" class="button button__card">Заказать диагностику</a>
+							<a href="#" class="button button__card button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать диагностику</a>
 						</div>
 					</div>
 				</div>
@@ -385,7 +494,7 @@
 					получаете автомобиль о котором досконально знаете техническую, юридическую информацию и историю владения</p>
 					<p class="bargaining__price">В среднем мы снижаем цену у<br>
 					продавца <span>от 5000 до 150 000 рублей</span></p>
-					<a href="#" class="button button__main">Получить свой бонус!</a>
+					<a href="#" class="button button__main button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Получить свой бонус!</a>
 				</div>
 			</div>
 		</div>
@@ -598,13 +707,14 @@
 					</div>
 					<div class="footer-menu__phone">
 						<a href="tel:+79819585552" class="footer-phone">+7 (981) 958-55-52</a>
-						<a href="#" class="footer-phone__link">Заказать звонок</a>
+						<a href="#" class="footer-phone__link" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 <script src="./js/jq341.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
 <script src="./js/main.js"></script>	
 </body>
 </html>

@@ -7,11 +7,49 @@ $(function () {
 	})
 });
 /* --------tabs-------------- */
+window.addEventListener("DOMContentLoaded", function () {
+	[].forEach.call(document.querySelectorAll('.tel'), function (input) {
+		var keyCode;
+		function mask(event) {
+			event.keyCode && (keyCode = event.keyCode);
+			var pos = this.selectionStart;
+			if (pos < 3) event.preventDefault();
+			var matrix = "+7 (___) ___-__-__",
+				i = 0,
+				def = matrix.replace(/\D/g, ""),
+				val = this.value.replace(/\D/g, ""),
+				new_value = matrix.replace(/[_\d]/g, function (a) {
+					return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+				});
+			i = new_value.indexOf("_");
+			if (i != -1) {
+				i < 5 && (i = 3);
+				new_value = new_value.slice(0, i)
+			}
+			var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+				function (a) {
+					return "\\d{1," + a.length + "}"
+				}).replace(/[+()]/g, "\\$&");
+			reg = new RegExp("^" + reg + "$");
+			if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+			if (event.type == "blur" && this.value.length < 5) this.value = ""
+		}
+
+		input.addEventListener("input", mask, false);
+		input.addEventListener("focus", mask, false);
+		input.addEventListener("blur", mask, false);
+		input.addEventListener("keydown", mask, false)
+
+	});
+
+});
 let tab1 = document.getElementById('tab1');
 let tab2 = document.getElementById('tab2');
 let tab3 = document.getElementById('tab3');
 let labelTab1 = document.getElementById('labelTab1');
 let labelTab2 = document.getElementById('labelTab2');
+
+console.log(labelTab1);
 
 let tabFun = function() {
 	if (tab1.checked) {
@@ -39,6 +77,7 @@ tab3.addEventListener('change', tabFun);
 // secret1.addEventListener('click', function() {
 // 	secret2.classList.toggle('secret-hide');
 // })
+
 let accordions = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < accordions.length; i++) {
@@ -51,6 +90,45 @@ for (let i = 0; i < accordions.length; i++) {
 			content.style.maxHeight = null;
 		} else {
 			content.style.maxHeight = content.scrollHeight + "px";
+		}
+	}
+}
+
+/* --------------------- */
+let modalTitle = document.getElementById('modal-title')
+console.log(modalTitle);
+let buttonClick = document.getElementsByClassName('button-click');
+console.log(modalTitle);
+console.log(buttonClick[0].textContent);
+let title = function() {
+
+}
+for (let i = 0; i < buttonClick.length; i++) {
+	buttonClick[i].addEventListener('click', function() {
+		modalTitle.textContent = buttonClick[i].textContent
+	})
+}
+
+// ---------------
+
+// let contenttab3 = document.getElementById('content-tab3')
+// console.log(contenttab3)
+
+let tooltips = document.getElementsByClassName("tooltip");
+
+console.log(tooltips);
+
+for (let i = 0; i < tooltips.length; i++) {
+	tooltips[i].onclick = function () {
+		this.classList.toggle('is-opens');
+		// this.classList.toggle('rotate');
+
+		let tooltipsContent = this.firstElementChild;
+		if (tooltipsContent.style.maxHeight) {
+			tooltipsContent.style.maxHeight = null;
+		} else {
+			tooltipsContent.style.maxHeight = tooltipsContent.scrollHeight + 22 + "px";
+			console.log(tooltipsContent.scrollHeight);
 		}
 	}
 }

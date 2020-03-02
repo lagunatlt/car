@@ -231,11 +231,11 @@ nav {
   transition: all 0.2s;
 }
 .nav-top__item:hover {
-  color: #00ACFF;
+  color: #00ACFF !important;
 }
 
 .nav-top__item.active {
-  color: #00ACFF;
+  color: #00ACFF !important;
 }
 
 

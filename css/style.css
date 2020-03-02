@@ -231,11 +231,11 @@ nav {
   transition: all 0.2s;
 }
 .nav-top__item:hover {
-  color: #00ACFF !important;
+  color: #00ACFF;
 }
 
 .nav-top__item.active {
-  color: #00ACFF !important;
+  color: #00ACFF;
 }
 
 
@@ -1148,11 +1148,12 @@ header h1 {
   content: '';
   position: absolute;
   top: calc(50% - 338.5px);
-  left: -448px;
-  width: 869px;
+  left: -360px;
+  width: 802px;
   height: 677px;
   background-image: url('../img/reguest-l.png');
   background-repeat: no-repeat;
+  background-position: right center;
 }
 .overpayment__wrap::after {
   content: '';
@@ -1265,19 +1266,19 @@ header h1 {
   content: '';
   position: absolute;
   bottom: 54px;
-  right: -594px;
-  width: 1179px;
+  right: -360px;
+  width: 988px;
   height: 658px;
   z-index: 0;
   background-image: url('../img/q.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
 }
 .bargaining__cont::before {
   content: '';
   position: absolute;
   top: calc(50% - 242px);
-  left: -375px;
+  left: -360px;
   width: 299px;
   height: 484px;
   background-image: url('../img/paper.png');
@@ -1671,5 +1672,22 @@ header {
 }
 .fixed-top .header-top__logo {
   height: 60px;
+}
+.fixed-top .nav-top__item {
+  color: #000;
+}
+.fixed-top .nav-top__item:hover {
+  color: #00ACFF;
+}
+
+.fixed-top .nav-top__item.active {
+  color: #00ACFF;
+}
+body.compensate-for-scrollbar {
+  overflow: hidden !important;
+  overflow-y: scroll !important;
+}
+.compensate-for-scrollbar {
+  margin-right: 0 !important;
 }
 /* -------------fixed-top-end---------------- */

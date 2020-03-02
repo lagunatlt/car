@@ -3,8 +3,8 @@ window.onload = function () {
 };
 $(function () {
 	$('.nav-top__item').click(function () {
-		$('body,html').animate({ scrollTop: $('#' + $(this).data('value')).offset().top }, 1000)
-	})
+		$('body,html').animate({ scrollTop: $('#' + $(this).data('value')).offset().top }, 1000);
+	});
 });
 /* --------tabs-------------- */
 window.addEventListener("DOMContentLoaded", function () {
@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
 				def = matrix.replace(/\D/g, ""),
 				val = this.value.replace(/\D/g, ""),
 				new_value = matrix.replace(/[_\d]/g, function (a) {
-					return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+					return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
 				});
 			i = new_value.indexOf("_");
 			if (i != -1) {
@@ -63,7 +63,7 @@ let tabFun = function() {
 		labelTab1.style.borderRight = '1px solid #000';
 		labelTab2.style.borderRight = 'none';
 	}
-}
+};
 tabFun();
 
 tab1.addEventListener('change', tabFun);
@@ -85,7 +85,7 @@ for (let i = 0; i < accordions.length; i++) {
 		} else {
 			content.style.maxHeight = content.scrollHeight + "px";
 		}
-	}
+	};
 }
 
 /* --------------------- */
@@ -138,7 +138,7 @@ let tooltipsClick = function() {
 	}
 };
 
-tooltipsClick()
+tooltipsClick();
 
 
 /* -----------tooltips-end------- */

@@ -17,6 +17,19 @@ $(document).ready(function ($) {
 			$('nav').css('padding-top', '7px');
 			$('nav').css('padding-bottom', '8px');
 			$('.header-top__wrapper').addClass('fixed-top');
+
+			$('.header-logo').css('width', '66%');
+			$('.phone').css('padding-bottom', '6px');
+			$('.phone').css('font-size', '23px');
+			$('.phone__link').css('font-size', '14px');
+			$('.header-top__phone').css('margin-top', '8px');
+			$('.header-top__logo').css('height', '60px');
+			$('.header--nav-paddind').css('padding-top', '0');
+			$('.header--paddind').css('padding-top', '0');
+			$('nav').css('border-top', 'none');
+			$('.header--nav-paddind').css('background-color', 'rgb(255, 255, 255)');
+			$('.nav-top__item').css('color', '#000');
+			$('.phone__link').css('border-bottom', '1px solid #081f44');
 			// $('header').css('padding-top', '142px');
 		} else {
 			// $('header').css('padding-top', '0');
@@ -26,6 +39,19 @@ $(document).ready(function ($) {
 			$('nav').css('padding-top', '20px');
 			$('nav').css('padding-bottom', '20px');
 			$('.header-top__wrapper').removeClass('fixed-top');
+
+			$('.header-logo').css('width', '100%');
+			$('.phone').css('padding-bottom', '15px');
+			$('.phone').css('font-size', '28px');
+			$('.phone__link').css('font-size', '16px');
+			$('.header-top__phone').css('margin-top', '15px');
+			$('.header-top__logo').css('height', '70px');
+			$('.header--nav-paddind').css('padding-top', '10px');
+			$('.header--paddind').css('padding-top', '7px');
+			$('nav').css('border-top', '1px solid #fff');
+			$('.header--nav-paddind').css('background-color', 'transparent');
+			$('.nav-top__item').css('color', '#fff');
+			$('.phone__link').css('border-bottom', '1px solid #fff');
 		}
 	});
 });

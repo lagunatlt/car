@@ -4,24 +4,30 @@
 }
 html {
 	font-family: 'Manrope';
-	font-weight: normal;
+	font-weight: 500;
 	color: #fff;
 }
 body {
+	max-width: 1920px;
+	margin: 0 auto;
 	background-color: #fff;
+	overflow: hidden;
 }
 h1 {
+	margin-bottom: 70px;
 	font-size: 110px;
-	line-height: 38px;
+	font-weight: bold;
+	line-height: 76px;
 }
 h1 span {
 	font-size: 36px;
 }
 .container {
+	height: 100vh;
 	max-width: 1170px;
+	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin: 0 auto;
 }
 .section__bg {
 	height: 100vh;
@@ -30,38 +36,103 @@ h1 span {
 	background-size: cover;
 	background-image: url('../img/header.jpg');
 	background-position: center;
+	overflow: hidden;
+	
 }
 
 .section__bg::before {
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 0;
-	right: 0;
+	left: -181px;
+	right: 26%;
 	bottom: 0;
+	z-index: 1;
+	transform: skew(-13deg);
 	background-color: #081f44;
 	opacity: 0.95;
 }
+.section__bg::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 74%;
+	right: -144px;
+	bottom: 0;
+	z-index: 0;
+	transform: skew(-13deg);
+	background-color: #fff;
+	/* background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/header.jpg');
+	background-position: center; */
+}
 .header__wrap {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	z-index: 2;
 }
-
-.header__main p {
-	font-size: 26px;
+.header__wrap::before {
+	content: '';
+	position: absolute;
+	/* top: 146px; */
+	right: -375px;
+	bottom: 15px;
+	width: 752px;
+	height: 680px;
+	background-image: url('../img/car-header-thanks.png');
+	background-repeat: no-repeat;
+}
+.header__top {
+	display: flex;
+	align-items: center;
+	width: 379px;
+	margin-bottom: 49px;
+	padding-top: 50px;
+}
+.header__logo {
+	margin-right: 30px;
+}
+.header__top-desc {
+	font-size: 14px;
 	line-height: 20px;
+}
+.header__main p {
+	font-family: 'Manrope';
+	font-size: 26px;
+	line-height: 60px;
 }
 .header__main p span{
 	color: #00ACFF;
 }
+.header-content {
+	margin-bottom: 45px;
+}
 .header__contact a {
+	font-family: 'Manrope';
+	text-decoration: none;
 	color: #00ACFF;
 	font-size: 48px;
+	font-weight: bold;
 }
 .header__contact a:hover {
 	color: #fff;
 }
+.header__bottom {
+	width: 254px;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
 .header__bottom a {
+	font-family: 'Manrope';
+	font-weight: 500;
+	font-size: 24px;
 	color: #fff;
+	text-decoration: none;
 }
 .header__bottom a:hover {
 	color: #00ACFF;

@@ -235,7 +235,7 @@ nav {
   color: #00ACFF;
 }
 
-.nav-top__item.active {
+.active .nav-top__item {
   color: #00ACFF;
 }
 
@@ -1681,7 +1681,7 @@ header {
   color: #00ACFF;
 }
 
-.fixed-top .nav-top__item.active {
+.fixed-top .active .nav-top__item{
   color: #00ACFF;
 }
 body.compensate-for-scrollbar {

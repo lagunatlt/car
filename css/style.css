@@ -1615,7 +1615,7 @@ footer {
 .form__modal {
   padding: 58px 25px;
 }
-/* ------------------------------ */
+/* -------------fixed-top----------------- */
 .header-top__wrapper {
   position: fixed;
   top: 0;
@@ -1638,3 +1638,38 @@ header {
   box-shadow: 0 0 17px #000000bf;
   transition: all 0.2s ease-in-out;
 }
+/* .header-top__wrapper .header-top__logo {
+  width: 20%;
+} */
+.fixed-top .header--paddind {
+  padding-bottom: 0px;
+  padding-top: 0;
+}
+.fixed-top .header--nav-paddind {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgb(255, 255, 255);
+}
+.fixed-top nav {
+  padding-top: 7px;
+  padding-bottom: 8px;
+  border-top: none;
+}
+.fixed-top .header-logo {
+  width: 66%;
+}
+.fixed-top .phone {
+  padding-bottom: 6px;
+  font-size: 23px;
+}
+.fixed-top .phone__link {
+  font-size: 14px;
+  border-bottom: 1px solid #081f44;
+}
+.fixed-top .header-top__phone {
+  margin-top: 8px;
+}
+.fixed-top .header-top__logo {
+  height: 60px;
+}
+/* -------------fixed-top-end---------------- */

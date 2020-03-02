@@ -17,7 +17,7 @@ body {
   font-weight: normal;
   overflow-x: hidden;
   opacity: 0;
-  transition: opacity 1.5s ease-out;
+  transition: opacity 0.8s ease-out;
 }
 a {
   text-decoration: none;

@@ -49,7 +49,6 @@ let tab3 = document.getElementById('tab3');
 let labelTab1 = document.getElementById('labelTab1');
 let labelTab2 = document.getElementById('labelTab2');
 
-console.log(labelTab1);
 
 let tabFun = function() {
 	if (tab1.checked) {
@@ -72,11 +71,6 @@ tab2.addEventListener('change', tabFun);
 tab3.addEventListener('change', tabFun);
 /* --------tabs end-------------- */
 
-// let secret1 = document.getElementById('secret1');
-// let secret2 = document.getElementById('secret2');
-// secret1.addEventListener('click', function() {
-// 	secret2.classList.toggle('secret-hide');
-// })
 
 let accordions = document.getElementsByClassName("accordion");
 
@@ -107,30 +101,46 @@ let title = function() {
 };
 title();
 /* -----------tooltips-------- */
+let autoCheck = document.getElementById('autoCheck');
 let tooltips = document.getElementsByClassName("tooltip");
 
 let tooltipsClick = function() {
 	for (let i = 0; i < tooltips.length; i++) {
 		tooltips[i].onclick = function() {
+
 			this.classList.toggle('is-opens');
 	
 			let tooltipsContent = this.firstElementChild;
+
 			if (!tooltips[i].classList.contains('is-opens')) {
 				tooltipsContent.style.opacity = '0';
 				setTimeout(function() {
 					tooltipsContent.style.display = 'none';
-				}, 301)
+					tooltips[i].classList.remove('is-opens');
+				}, 301);
 			} else {
 				tooltipsContent.style.display = 'block';
 				setTimeout(function () {
 					tooltipsContent.style.opacity = '1';
-				}, 1)
-	
+				}, 1);
 			}
+
+			autoCheck.addEventListener('click', function(el) {
+				if ((!tooltips[i].classList.contains('is-opens')) || (!el.target.classList.contains('tooltip'))) {
+					tooltipsContent.style.opacity = '0';
+					setTimeout(function () {
+						tooltipsContent.style.display = 'none';
+						tooltips[i].classList.remove('is-opens');
+					}, 301);
+				}
+			});
 		};
 	}
 };
-tooltipsClick();
+
+tooltipsClick()
+
+
 /* -----------tooltips-end------- */
 
 /* -------------form send----------- */

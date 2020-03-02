@@ -587,8 +587,62 @@ header h1 {
   opacity: 0;
   padding: 11px 15px;
   cursor: pointer;
+  z-index: 2;
+  position: relative;
   transition: all 0.3s ease-out;
 }
+
+#content-tab1>div:nth-child(1)>div:nth-child(2) {
+  top: 214px;
+  left: 390px;
+}
+#content-tab1>div:nth-child(1)>div:nth-child(3) {
+  top: 187px;
+  left: 251px;
+}
+#content-tab1>div:nth-child(1)>div:nth-child(4) {
+  top: 71px;
+  left: 258px;
+}
+#content-tab1>div:nth-child(1)>div:nth-child(5) {
+  top: 115px;
+  left: 118px;
+}
+#content-tab1>div:nth-child(1)>div:nth-child(6) {
+  top: 26px;
+  left: 543px;
+}
+#content-tab1>div:nth-child(1)>div:nth-child(7) {
+  top: 89px;
+  left: 465px;
+}
+#content-tab1>div:nth-child(1)>div:nth-child(8) {
+  top: 194px;
+  left: 786px;
+}
+#content-tab1>div:nth-child(1)>div:nth-child(9) {
+  top: 280px;
+  left: 422px;
+}
+#content-tab1>div:nth-child(1)>div:nth-child(10) {
+  top: 165px;
+  left: 592px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .is-opens .tooltip-content {
  opacity: 1;
 } */

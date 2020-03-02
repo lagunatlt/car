@@ -132,3 +132,56 @@ let tooltipsClick = function() {
 };
 tooltipsClick();
 /* -----------tooltips-end------- */
+
+/* -------------form send----------- */
+$(document).ready(function ($) {
+
+	// Отправляет данные из формы на сервер и получает ответ
+	$('#form').on('submit', function (event) {
+
+		event.preventDefault();
+
+		var form = $('#form'),
+			// button = $('#button'),
+			answer = $('#answer'),
+			loader = $('#loader');
+
+		$.ajax({
+			url: 'send.php',
+			type: 'POST',
+			data: form.serialize(),
+			beforeSend: function () {
+				answer.empty();
+				loader.fadeIn();
+			},
+
+			success: function (result) {
+				setTimeout(function () {
+					loader.fadeOut();
+					answer.css('display', 'flex');
+					answer.text('Сообщение успешно отправлено.');
+					// });
+				}, 600);
+				setTimeout(function () {
+					modalHide();  //см.функции выше
+					$('#form').trigger("reset");
+
+				}, 1500);
+				console.log('ok');
+			},
+
+			error: function () {
+				loader.fadeOut(600, function () {
+					answer.css('display', 'flex');
+					answer.text('Произошла ошибка! Попробуйте позже.');
+				});
+				setTimeout(function () {
+					answer.fadeOut(1700, function () {
+						answer.hide();
+					});
+				}, 2800);
+			}
+		});
+	});
+});
+/* -------------------------- */

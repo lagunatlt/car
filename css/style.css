@@ -1695,8 +1695,3 @@ body.compensate-for-scrollbar {
 
 
 
-@media (max-width: 1200px) {
-  .stat__item {
-    padding: 24px 25px;
-  }
-}

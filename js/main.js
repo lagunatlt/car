@@ -257,13 +257,70 @@ $(window).scroll(function () {
 // })
 // -------------------
 
-$('.stat__wrap').slick({
-	infinite: true,
-	autoplay: true,
-	autoplaySpeed: 1000,
-	arrows: false,
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	dots: false,
-	centerMode: true,
+// $('.stat__wrap').slick({
+// 	responsive: [{
+// 		settings: 'unslick',
+// 		breakpoint: 1023,
+// 		infinite: true,
+// 		autoplay: true,
+// 		autoplaySpeed: 1000,
+// 		arrows: false,
+// 		slidesToShow: 3,
+// 		slidesToScroll: 1,
+// 		dots: false,
+// 		centerMode: true,
+// 	}]
+// });
+function slickify() {
+	$('.##stat-secret').slick({
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 1000,
+		arrows: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		centerMode: true,
+	});
+}
+// slickify();
+$(window).resize(function () {
+	var $windowWidth = $(window).width();
+	if ($windowWidth > 1440) {
+		slickify();
+	}
 });
+
+
+// $('.stat__wrap').slick({
+// 	slidesToShow: 4,
+// 	slidesToScroll: 1,
+// 	responsive: [
+// 		{
+// 			breakpoint: 990,
+// 			settings: {
+// 				slidesToShow: 2,
+// 				slidesToScroll: 1,
+// 				autoplay: true,
+// 				autoplaySpeed: 2000,
+// 				arrows: false,
+// 				infinite: true,
+// 				// centerMode: true,
+// 				// centerPadding: '200px',
+// 			}
+// 		},
+// 		{
+// 			breakpoint: 560,
+// 			settings: {
+// 				slidesToShow: 1,
+// 				slidesToScroll: 1,
+// 				autoplay: true,
+// 				autoplaySpeed: 2000,
+// 				arrows: false,
+// 				infinite: true,
+// 				// centerMode: true,
+// 				// centerPadding: '200px',
+// 			}
+// 		}
+// 	]
+// });

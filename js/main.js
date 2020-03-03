@@ -256,3 +256,14 @@ $(window).scroll(function () {
 // 	$('.nav-top__item').toggleClass('active')
 // })
 // -------------------
+
+$('.stat__wrap').slick({
+	infinite: true,
+	autoplay: true,
+	autoplaySpeed: 1000,
+	arrows: false,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	dots: false,
+	centerMode: true,
+});

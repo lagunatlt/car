@@ -36,7 +36,11 @@ h2 span {
 section {
   position: relative;
 }
-
+header,
+section,
+.section {
+  overflow: hidden;
+}
 .container,
 .container-fluid {
   position: relative;

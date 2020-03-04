@@ -717,6 +717,10 @@
 			top: 0;
 		}
 
+		.section-tab__item-img img {
+			left: -476px;
+		}
+
 		.form-main p {
 			margin-top: 30px;
 		}
@@ -996,9 +1000,9 @@
 			margin-bottom: 20px;
 			background-size: 60px;
 		}
-		.section-tab {
+		/* .section-tab {
 			transform: scale(0.8);
-		}
+		} */
 
 		.tabs>label {
 			height: 61px;
@@ -1056,6 +1060,25 @@
 }
 
 @media (max-width: 800px) {
+	.tabs>label {
+		height: 58px;
+		padding: 15px 8px;
+	}
+	.section-tab__item-img {
+		display: none;
+	}
+
+	.section-tab__item ul {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+		.section-tab__item li {
+			margin-left: 94px;
+		}
+		
+	.tooltip::before {
+		background-size: 35px;
+	}
 	.stat__title {
 		font-size: 25px;
 	}
@@ -1285,6 +1308,10 @@
 		display: none;
 	}
 }
+@media (max-width: 720px) {
+	
+}
+
 
 @media (max-width: 640px) {
 

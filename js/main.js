@@ -116,36 +116,40 @@ let autoCheck = document.getElementById('autoCheck');
 let tooltips = document.getElementsByClassName("tooltip");
 
 let tooltipsClick = function() {
-	for (let i = 0; i < tooltips.length; i++) {
-		tooltips[i].onclick = function() {
-
-			this.classList.toggle('is-opens');
+	let wimWidth = window.innerWidth;
+	if (wimWidth > 640) {
+		for (let i = 0; i < tooltips.length; i++) {
+			tooltips[i].onclick = function() {
 	
-			let tooltipsContent = this.firstElementChild;
-
-			if (!tooltips[i].classList.contains('is-opens')) {
-				tooltipsContent.style.opacity = '0';
-				setTimeout(function() {
-					tooltipsContent.style.display = 'none';
-					tooltips[i].classList.remove('is-opens');
-				}, 301);
-			} else {
-				tooltipsContent.style.display = 'block';
-				setTimeout(function () {
-					tooltipsContent.style.opacity = '1';
-				}, 1);
-			}
-
-			autoCheck.addEventListener('click', function(el) {
-				if ((!tooltips[i].classList.contains('is-opens')) || (!el.target.classList.contains('tooltip'))) {
+				this.classList.toggle('is-opens');
+		
+				let tooltipsContent = this.firstElementChild;
+	
+				if (!tooltips[i].classList.contains('is-opens')) {
 					tooltipsContent.style.opacity = '0';
-					setTimeout(function () {
+					setTimeout(function() {
 						tooltipsContent.style.display = 'none';
 						tooltips[i].classList.remove('is-opens');
 					}, 301);
+				} else {
+					tooltipsContent.style.display = 'block';
+					setTimeout(function () {
+						tooltipsContent.style.opacity = '1';
+					}, 1);
 				}
-			});
-		};
+	
+				autoCheck.addEventListener('click', function(el) {
+					if ((!tooltips[i].classList.contains('is-opens')) || (!el.target.classList.contains('tooltip'))) {
+						tooltipsContent.style.opacity = '0';
+						setTimeout(function () {
+							tooltipsContent.style.display = 'none';
+							tooltips[i].classList.remove('is-opens');
+						}, 301);
+					}
+				});
+			};
+		}
+
 	}
 };
 
@@ -364,17 +368,20 @@ function slickifySecret() {
 function reportWindowSize() {
 	// heightOutput.textContent = window.innerHeight;
 	let ww = window.innerWidth;
-	console.log(ww)
+	// console.log(ww)
+	
 	if (ww < 1600) {
 		// slickifyTop();
 		slickifySecret();
 	};
 	if  (ww < 1200) {
 		slickifyTop();
-	}
+	};
 }
 // window.addEventListener('resize', reportWindowSize);
 reportWindowSize();
+
+
 
 
 

@@ -439,6 +439,7 @@ header h1 {
   background-color: #00ACFF;
   border-radius: 10px;
   box-shadow: 0 0 36px RGBA(0, 160, 228, 0.42);
+  cursor: pointer;
 }
 .stat__item:last-child {
   margin-right: 0;

@@ -271,25 +271,124 @@ $(window).scroll(function () {
 // 		centerMode: true,
 // 	}]
 // });
-function slickify() {
-	$('.##stat-secret').slick({
+function slickifyTop() {
+	$('.stat__wrap').slick({
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 1500,
 		arrows: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
+		slidesToShow: 5,
+		slidesToScroll: 2,
 		dots: false,
 		centerMode: true,
+		variableWidth: true,
+		responsive: [
+			// {
+			// 	breakpoint: 1550,
+			// 	settings: {
+			// 		slidesToShow: 4,
+			// 		slidesToScroll: 3
+			// 	}
+			// },
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 820,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 }
-// slickify();
-$(window).resize(function () {
-	var $windowWidth = $(window).width();
-	if ($windowWidth > 1440) {
-		slickify();
+
+function slickifySecret() {
+	$('.stat-secret').slick({
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 1500,
+		arrows: false,
+		slidesToShow: 5,
+		slidesToScroll: 2,
+		dots: false,
+		centerMode: true,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 1550,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 3
+				}
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 820,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+}
+
+
+
+function reportWindowSize() {
+	// heightOutput.textContent = window.innerHeight;
+	let ww = window.innerWidth;
+	console.log(ww)
+	if (ww < 1600) {
+		// slickifyTop();
+		slickifySecret();
+	};
+	if  (ww < 1200) {
+		slickifyTop();
 	}
-});
+}
+// window.addEventListener('resize', reportWindowSize);
+reportWindowSize();
+
+
+
+
+
+// $(window).resize(function () {
+// 	var $windowWidth = $(window).width();
+// 	if ($windowWidth < 1440) {
+// 		slickify();
+// 	}
+// });
+
+
+
 
 
 // $('.stat__wrap').slick({

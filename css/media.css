@@ -1461,9 +1461,15 @@
   height: 185px;
 }
 
-.footer-menu__mess {
-  right: 54%;
-}
+	.footer-menu__mess {
+		right: 56%;
+	}
+
+
+	.viber {
+		margin-right: 20px;
+	}
+
 
 .footer-bottom__logo {
   flex-direction: column;
@@ -2193,6 +2199,18 @@
 		line-height: 25px;
 	}
 
+		.phone {
+			font-size: 19px;
+		}
+
+		.header-top__logo {
+			width: 81px;
+		}
+	
+
+	.header-top__phone {
+		margin-right: 5px;
+	}
 
 
 }

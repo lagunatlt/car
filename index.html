@@ -6,7 +6,10 @@
 	<title>Автоподбор</title>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+	<!-- <link rel="stylesheet" href="css/pushy.css"> -->
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -21,6 +24,23 @@
 			</form>
 		</div>
 	</div>
+	<nav class="mobile-menu">
+		<div class="nav__button button-close">
+			<span></span>
+		</div>
+		<ul class="nav-top__items">
+			<li><a href="#autoCheck" class="nav-top__item active" data-value="autoCheck">Проверка авто</a></li>
+			<li><a href="#menu-item-2" class="nav-top__item" data-value="menu-item-2">Отзывы</a></li>
+			<li><a href="#menu-item-3" class="nav-top__item" data-value="menu-item-3">Гарантии</a></li>
+			<li><a href="#menu-item-4" class="nav-top__item" data-value="menu-item-4">Уcлуги и цены</a></li>
+			<li><a href="#menu-item-5" class="nav-top__item" data-value="menu-item-5">Вопрос-ответ</a></li>
+			<li><a href="#menu-item-6" class="nav-top__item" data-value="menu-item-6">Схема работы</a></li>
+			<li><a href="tel:88129880508">8 (812)-988-05-08</a></li>
+			<!-- <a href="tel:+78129880508" class="phone">8 (812)-988-05-08</a> -->
+			<p>Подбор и полная диагностика авто в Санкт-Петербурге и Лен. области</p>
+		</ul>
+	</nav>
+	<div class="mobile-menu__s"></div>
 	<header class="section__bg section__bg-header" id="home">
 		<div class="header-top__wrapper">
 			<div class="container header--paddind">
@@ -40,6 +60,9 @@
 						<div class="header-top__phone">
 							<a href="tel:+78129880508" class="phone">8 (812)-988-05-08</a>
 							<a class="phone__link" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать звонок</a>
+						</div>
+						<div class="nav__button button-open">
+							<span></span>
 						</div>
 					</div>
 				</div>
@@ -79,7 +102,7 @@
 	</header>
 	<div class="section stat">
 		<div class="container-fluid">
-			<div class="stat__wrap">
+			<div class="stat__wrap stat-slide">
 				<div class="stat__item">
 					<p class="stat__title">510 000р</p>
 					<p class="stat__desc">Самая большая	сторгованная сумма</p>
@@ -600,7 +623,7 @@
 		</div>
 		<!-- <div class="section stat"> -->
 			<div class="container-fluid container-pt">
-				<div class="stat__wrap stat-secret">
+				<div class="stat__wrap stat-secret stat-slide-secret">
 					<div class="stat__item stat-secret__item">
 						<p class="stat__title">8%</p>
 						<p class="stat__desc">Авто "утопленники"</p>
@@ -717,8 +740,10 @@
 		</div>
 	</footer>
 <script src="./js/jq341.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/slick.min.js"></script>
 <script src="./js/jquery.fancybox.min.js"></script>
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+<!-- <script src="./js/pushy.min.js"></script> -->
 <script src="./js/main.js"></script>	
 </body>
 </html>

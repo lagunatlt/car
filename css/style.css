@@ -186,6 +186,7 @@ section,
   flex-direction: column;
   align-items: end;
   margin-top: 15px;
+  margin-right: 10px;
 
 }
 .phone,
@@ -1697,6 +1698,116 @@ body.compensate-for-scrollbar {
   margin-right: 0 !important;
 }
 /* -------------fixed-top-end---------------- */
+.nav__button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+  border: 1px solid #ffffff7a;
+}
+
+.nav__button span {
+  width: 30px;
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+}
+.nav__button span::before,
+.nav__button span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.nav__button span::after {
+  top: -10px;
+}
+.nav__button span::before {
+  top: 10px;
+}
+.button-close span::before,
+.button-close span::after {
+  background-color: #5e5e5e;;
+}
+.button-close span {
+  background-color: transparent;
+}
+.button-close span::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.button-close span::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.button-close {
+  border: 1px solid #5e5e5e;;
+  position: absolute;
+  right: 12px;
+}
 
 
 
+.mobile-menu {
+  display: none;
+  position: fixed;
+  width: 350px;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 7px;
+  box-shadow: 0 148px 141px #000;
+  z-index: 1000;
+}
+.mobile-menu p{
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+}
+.mobile-menu__s {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+  z-index: 20;
+}
+
+.mobile-menu .nav-top__items {
+  padding-top: 60px;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  justify-content: space-evenly;
+}
+
+.mobile-menu .nav-top__item {
+  color: #000;
+  font-size: 20px;
+}
+
+.mobile-menu ul li{
+  margin-bottom: 5%;
+}
+.mobile-menu a {
+  color: #00ACFF;
+  margin-top: 20px;
+}
+.mobile-menu a:hover {
+  color: #00ACFF;
+}

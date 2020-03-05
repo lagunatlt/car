@@ -349,9 +349,26 @@ reportWindowSize11();
 
 
 
-/* -------------------- */
+/* --------open menu------------ */
+let mobileMenuS = document.getElementById('mobileMenuS');
 let buttonOpen = document.getElementById('buttonOpen');
 let mobileMenu = document.getElementById('mobileMenu');
-buttonOpen.addEventListener('click', function() {
-	mobileMenu.classList.toggle('menu-active');
-})
+let body = document.getElementById('body');
+
+let menuActivate = document.querySelectorAll('.mobile-menu__activate');
+for (let i = 0; i < menuActivate.length; i++) {
+	menuActivate[i].addEventListener('click', function() {
+		if (mobileMenu.classList.contains('menu-active')) {
+			mobileMenu.classList.remove('menu-active')
+			mobileMenuS.classList.remove('mobile-menu__s-active')
+			body.style.overflowY = 'auto';
+		} else {
+			mobileMenu.classList.add('menu-active')
+			mobileMenuS.classList.add('mobile-menu__s-active')
+			body.style.overflowY = 'hidden';
+		};
+		
+	})
+}
+	
+/* ------------------- */

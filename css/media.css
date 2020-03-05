@@ -547,6 +547,9 @@
 		padding-left: 75px;
 		background-position: 30px center;
 	}
+	.modal-content .form__input {
+		margin-bottom: 36px;
+	}
 
 	h1,
 	h2 {

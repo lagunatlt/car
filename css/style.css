@@ -1820,6 +1820,10 @@ body.compensate-for-scrollbar {
   opacity: 0;
 }
 .mobile-menu__s-active {
+  display: block;
   z-index: 20;
   opacity: 1;
+}
+#hidden-content {
+  border-radius: 10px;
 }

@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
-<body>
+<body id="body">
 	<div class="modal-content" id="hidden-content" style="display: none;">
 		<div class="form__header form__header-bg form__modal">
 			<p class="form-main__title" id="modal-title">Узнайте стоимость подбора</p>
@@ -25,22 +25,22 @@
 		</div>
 	</div>
 	<nav class="mobile-menu" id="mobileMenu">
-		<div class="nav__button button-close">
+		<div class="nav__button button-close mobile-menu__activate">
 			<span></span>
 		</div>
 		<ul class="nav-top__items">
-			<li><a href="#autoCheck" class="nav-top__item active" data-value="autoCheck">Проверка авто</a></li>
-			<li><a href="#menu-item-2" class="nav-top__item" data-value="menu-item-2">Отзывы</a></li>
-			<li><a href="#menu-item-3" class="nav-top__item" data-value="menu-item-3">Гарантии</a></li>
-			<li><a href="#menu-item-4" class="nav-top__item" data-value="menu-item-4">Уcлуги и цены</a></li>
-			<li><a href="#menu-item-5" class="nav-top__item" data-value="menu-item-5">Вопрос-ответ</a></li>
-			<li><a href="#menu-item-6" class="nav-top__item" data-value="menu-item-6">Схема работы</a></li>
+			<li class=""><a href="#autoCheck" class="nav-top__item active mobile-menu__activate" data-value="autoCheck">Проверка авто</a></li>
+			<li class=""><a href="#menu-item-2" class="nav-top__item mobile-menu__activate" data-value="menu-item-2">Отзывы</a></li>
+			<li class=""><a href="#menu-item-3" class="nav-top__item mobile-menu__activate" data-value="menu-item-3">Гарантии</a></li>
+			<li class=""><a href="#menu-item-4" class="nav-top__item mobile-menu__activate" data-value="menu-item-4">Уcлуги и цены</a></li>
+			<li class=""><a href="#menu-item-5" class="nav-top__item mobile-menu__activate" data-value="menu-item-5">Вопрос-ответ</a></li>
+			<li class=""><a href="#menu-item-6" class="nav-top__item mobile-menu__activate" data-value="menu-item-6">Схема работы</a></li>
 			<li><a href="tel:88129880508">8 (812)-988-05-08</a></li>
 			<!-- <a href="tel:+78129880508" class="phone">8 (812)-988-05-08</a> -->
 			<p>Подбор и полная диагностика авто в Санкт-Петербурге и Лен. области</p>
 		</ul>
 	</nav>
-	<div class="mobile-menu__s"></div>
+	<div class="mobile-menu__s" id="mobileMenuS"></div>
 	<header class="section__bg section__bg-header" id="home">
 		<div class="header-top__wrapper">
 			<div class="container header--paddind">
@@ -61,7 +61,7 @@
 							<a href="tel:+78129880508" class="phone">8 (812)-988-05-08</a>
 							<a class="phone__link" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать звонок</a>
 						</div>
-						<div class="nav__button button-open" id="buttonOpen">
+						<div class="nav__button button-open mobile-menu__activate" id="buttonOpen">
 							<span></span>
 						</div>
 					</div>

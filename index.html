@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,18 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
+
 <body id="body">
 	<div class="modal-content" id="hidden-content" style="display: none;">
 		<div class="form__header form__header-bg form__modal">
 			<p class="form-main__title" id="modal-title">Узнайте стоимость подбора</p>
 			<p class="form-main__title">прямо сейчас!</p>
-			<form action="send.php" id="form" class="form" method="post">
-				<input id="name" name="name" type="text">
-				<input id="email" name="email" type="email">
-				<input type="tel" class="form__input tel" name="phone" id="phone" placeholder="Введите ваш телефон">
-				<button class="button button__form" type="submit">Заказать звонок</button>
+			<form action="send.php" id="form1" class="form" method="post">
+				<input name="name" type="text" class="forminput">
+				<input name="email" type="email" class="forminput">
+				<input type="tel" class="form__input tel" name="phone" placeholder="Введите ваш телефон">
+				<button class="button button__form" type="submit" onclick="window.location.href='thanks.html'">Заказать
+					звонок</button>
 			</form>
 		</div>
 	</div>
@@ -29,12 +32,18 @@
 			<span></span>
 		</div>
 		<ul class="nav-top__items">
-			<li class=""><a href="#autoCheck" class="nav-top__item active mobile-menu__activate" data-value="autoCheck">Проверка авто</a></li>
-			<li class=""><a href="#menu-item-2" class="nav-top__item mobile-menu__activate" data-value="menu-item-2">Отзывы</a></li>
-			<li class=""><a href="#menu-item-3" class="nav-top__item mobile-menu__activate" data-value="menu-item-3">Гарантии</a></li>
-			<li class=""><a href="#menu-item-4" class="nav-top__item mobile-menu__activate" data-value="menu-item-4">Уcлуги и цены</a></li>
-			<li class=""><a href="#menu-item-5" class="nav-top__item mobile-menu__activate" data-value="menu-item-5">Вопрос-ответ</a></li>
-			<li class=""><a href="#menu-item-6" class="nav-top__item mobile-menu__activate" data-value="menu-item-6">Схема работы</a></li>
+			<li class=""><a href="#autoCheck" class="nav-top__item active mobile-menu__activate"
+					data-value="autoCheck">Проверка авто</a></li>
+			<li class=""><a href="#menu-item-2" class="nav-top__item mobile-menu__activate"
+					data-value="menu-item-2">Отзывы</a></li>
+			<li class=""><a href="#menu-item-3" class="nav-top__item mobile-menu__activate"
+					data-value="menu-item-3">Гарантии</a></li>
+			<li class=""><a href="#menu-item-4" class="nav-top__item mobile-menu__activate" data-value="menu-item-4">Уcлуги и
+					цены</a></li>
+			<li class=""><a href="#menu-item-5" class="nav-top__item mobile-menu__activate"
+					data-value="menu-item-5">Вопрос-ответ</a></li>
+			<li class=""><a href="#menu-item-6" class="nav-top__item mobile-menu__activate" data-value="menu-item-6">Схема
+					работы</a></li>
 			<li><a href="tel:88129880508">8 (812)-988-05-08</a></li>
 			<p>Подбор и полная диагностика авто в Санкт-Петербурге и Лен. области</p>
 		</ul>
@@ -66,14 +75,14 @@
 			</div>
 			<div class="container-fluid header--nav-paddind">
 				<nav>
-						<ul class="nav-top__items">
-							<li><a href="#autoCheck" class="nav-top__item active" data-value="autoCheck">Проверка авто</a></li>
-							<li><a href="#menu-item-2" class="nav-top__item" data-value="menu-item-2">Отзывы</a></li>
-							<li><a href="#menu-item-3" class="nav-top__item" data-value="menu-item-3">Гарантии</a></li>
-							<li><a href="#menu-item-4" class="nav-top__item" data-value="menu-item-4">Уcлуги и цены</a></li>
-							<li><a href="#menu-item-5" class="nav-top__item" data-value="menu-item-5">Вопрос-ответ</a></li>
-							<li><a href="#menu-item-6" class="nav-top__item" data-value="menu-item-6">Схема работы</a></li>
-						</ul>
+					<ul class="nav-top__items">
+						<li><a href="#autoCheck" class="nav-top__item active" data-value="autoCheck">Проверка авто</a></li>
+						<li><a href="#menu-item-2" class="nav-top__item" data-value="menu-item-2">Отзывы</a></li>
+						<li><a href="#menu-item-3" class="nav-top__item" data-value="menu-item-3">Гарантии</a></li>
+						<li><a href="#menu-item-4" class="nav-top__item" data-value="menu-item-4">Уcлуги и цены</a></li>
+						<li><a href="#menu-item-5" class="nav-top__item" data-value="menu-item-5">Вопрос-ответ</a></li>
+						<li><a href="#menu-item-6" class="nav-top__item" data-value="menu-item-6">Схема работы</a></li>
+					</ul>
 				</nav>
 			</div>
 		</div>
@@ -89,9 +98,12 @@
 				</div>
 				<div class="form__header form__header-bg">
 					<p class="form-main__title">Узнайте стоимость подбора прямо сейчас!</p>
-					<form action="#" id="form" class="form">
-						<input type="tel" class="form__input tel" name="phone" id="phone" placeholder="Введите ваш телефон">
-						<button class="button button__form" type="submit">Узнать стоимость</button>
+					<form action="send.php" id="form2" class="form" method="post">
+						<input name="name" type="text" class="forminput">
+						<input name="email" type="email" class="forminput">
+						<input type="tel" class="form__input tel" name="phone" placeholder="Введите ваш телефон">
+						<button class="button button__form" type="submit" onclick="window.location.href='thanks.html'">Узнать
+							стоимость</button>
 					</form>
 				</div>
 			</div>
@@ -102,7 +114,7 @@
 			<div class="stat__wrap stat-slide">
 				<div class="stat__item">
 					<p class="stat__title">510 000р</p>
-					<p class="stat__desc">Самая большая	сторгованная сумма</p>
+					<p class="stat__desc">Самая большая сторгованная сумма</p>
 				</div>
 				<div class="stat__item">
 					<p class="stat__title">2 дня</p>
@@ -138,55 +150,56 @@
 		<div class="container">
 			<div class="auto-check__wrap">
 				<h2>Проверяем авто по <span>147 параметрам</span></h2>
-				<p class="auto-check__desc">Подбираем авто только <span>с чистой историей</span> и	всеми техническими состояниями деталей</p>
+				<p class="auto-check__desc">Подбираем авто только <span>с чистой историей</span> и всеми техническими
+					состояниями деталей</p>
 				<div class="auto-check__tabs">
 					<div class="tabs">
-							<input id="tab1" type="radio" name="tabs" checked>
-							<label for="tab1" id="labelTab1">Внешний осмотр</label>
-							<input id="tab2" type="radio" name="tabs">
-							<label for="tab2" id="labelTab2">Техническое состояние</label>
-							<input id="tab3" type="radio" name="tabs">
-							<label for="tab3" id="labelTab3">Юридическая проверка</label>
+						<input id="tab1" type="radio" name="tabs" checked>
+						<label for="tab1" id="labelTab1">Внешний осмотр</label>
+						<input id="tab2" type="radio" name="tabs">
+						<label for="tab2" id="labelTab2">Техническое состояние</label>
+						<input id="tab3" type="radio" name="tabs">
+						<label for="tab3" id="labelTab3">Юридическая проверка</label>
 						<div class="section-tab" id="content-tab1">
 							<div class="section-tab__item focus">
 								<img src="img/check-item3.png" alt="Внешний осмотр">
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка заводской
-									жесткости кузова</p>
+										жесткости кузова</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Исследование кузова
-									на предмет ДТП</p>
+										на предмет ДТП</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка ремней безопасности
-									на исправность работы и на
-									соответствие автомобилю</p>
+										на исправность работы и на
+										соответствие автомобилю</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Исследование кузова на наличие
-									незаводских кузовных элементов</p>
+										незаводских кузовных элементов</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Обнаружение применения
-									незаводской обработки металла</p>
+										незаводской обработки металла</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Внешний осмотр AirBag, проверка
-									отсутсвия повреждений, а также на
-									наличие их полной комплектности</p>
+										отсутсвия повреждений, а также на
+										наличие их полной комплектности</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка ЛКП на
-									наличие дефектов</p>
+										наличие дефектов</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка силовой конструкции
-									кузова на наличие вмешательств</p>
+										кузова на наличие вмешательств</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Поиск нештатных
-									швов и крепежей</p>
+										швов и крепежей</p>
 								</div>
 							</div>
 						</div>
@@ -195,36 +208,36 @@
 								<img src="img/check-item2.png" alt="Внешний осмотр">
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка колес на соответствие
-									размерности шины, на равномерность
-									износа, определение месяца и
-									года выпуска резины</p>
+										размерности шины, на равномерность
+										износа, определение месяца и
+										года выпуска резины</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка систем безопасности,
-									включая AirBag, на правильность
-									работы и соотвествие заводским
-									нормам с помощью компьютерной
-									диагностики</p>
+										включая AirBag, на правильность
+										работы и соотвествие заводским
+										нормам с помощью компьютерной
+										диагностики</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка АКПП с использованием
-									компьютерного модуля</p>
+										компьютерного модуля</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Диагностика трансмиссии</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка МКПП и ее
-									составляющих на износ</p>
+										составляющих на износ</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка тормозной системы
-									на износ и соответствие заводским
-									нормам</p>
+										на износ и соответствие заводским
+										нормам</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Диагностика подвески, определение
-									степени износа ее составляющих</p>
+										степени износа ее составляющих</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка впуска\выпуска</p>
@@ -234,29 +247,29 @@
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Диагностика рулевого управления
-									по средствам тест-драйва и
-									подключения модуля проверки ЭБУ</p>
+										по средствам тест-драйва и
+										подключения модуля проверки ЭБУ</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка ДВС с использованием
-									оригинального сертифицированного
-									оборудование, а также с применением
-									методов дефектовки агрегата</p>
+										оригинального сертифицированного
+										оборудование, а также с применением
+										методов дефектовки агрегата</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Диагностика турбины</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка АКБ с
-									использованием тестера</p>
+										использованием тестера</p>
 								</div>
 								<div class="tooltip">
 									<p class="tooltip-content">Проверка электроники и
-									контрольно-измерительных приборов
-									на адекватность работы с помощью
-									компьютерной диагностики</p>
+										контрольно-измерительных приборов
+										на адекватность работы с помощью
+										компьютерной диагностики</p>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="section-tab" id="content-tab3">
@@ -266,17 +279,17 @@
 								</div>
 								<ul>
 									<li>Исследование кузова на предмет изменения
-									идентификационной маркировки, проверка ее оригинальности</li>
+										идентификационной маркировки, проверка ее оригинальности</li>
 									<li>Проверка документов на соответствие идентификационной маркировки</li>
 									<li>Проверка оригинальности документов</li>
 									<li>Проверка полной комплектности документов</li>
 									<li>Определение правильности их оформления</li>
 									<li>Проверка автомобиля на наличие юридических обременений
-									с использованием официальной базы ГИБДД, ФССП, НБКИ,
-									базы страховых компаний и базы таксомоторных компаний</li>
+										с использованием официальной базы ГИБДД, ФССП, НБКИ,
+										базы страховых компаний и базы таксомоторных компаний</li>
 									<li>Проверка личности и данных продавца с целью установить
-									оригинальность данных собственника и убедиться в наличии
-									у него полномочий для совершения сделки купли-продажи</li>
+										оригинальность данных собственника и убедиться в наличии
+										у него полномочий для совершения сделки купли-продажи</li>
 								</ul>
 							</div>
 						</div>
@@ -298,13 +311,14 @@
 				<div class="legal__content">
 					<h2><span>Юридическая проверка</span> чистоты автомобиля</h2>
 					<p class="legal__desc">Проверка предыдущих владельцев, участие в ДТП, штрафов,
-					пользование в такси, непогашенный лизинг, ограничения ГИБДД,
-					соответствие тех. данных ПТС, историю регистрационных
-					действий и прочие детали, которые продавец скрывает или о
-					которых не знает, если авто находилось в пользовании до него.
-					Юридическая проверка авто перед покупкой убережет вас от
-					будущих проблем с законом.</p>
-					<a class="button button__main button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Проверить документы авто</a>
+						пользование в такси, непогашенный лизинг, ограничения ГИБДД,
+						соответствие тех. данных ПТС, историю регистрационных
+						действий и прочие детали, которые продавец скрывает или о
+						которых не знает, если авто находилось в пользовании до него.
+						Юридическая проверка авто перед покупкой убережет вас от
+						будущих проблем с законом.</p>
+					<a class="button button__main button-click" data-fancybox data-src="#hidden-content"
+						href="javascript:;">Проверить документы авто</a>
 				</div>
 				<div class="legal__items">
 					<ul>
@@ -324,10 +338,13 @@
 				<div class="send-request__form form-main">
 					<h2><span>Оставьте заявку</span> и получите скидку 20%</h2>
 					<p>Гарантированная скидка 20%, если вы
-					оставите заявку прямо сейчас</p>
-					<form action="#" id="form" class="form">
-						<input type="tel" class="form__input tel" name="phone" id="phone" placeholder="Введите ваш телефон">
-						<button class="button button__form" type="submit">Узнать стоимость</button>
+						оставите заявку прямо сейчас</p>
+					<form action="send.php" id="form3" class="form" method="post">
+						<input name="name" type="text" class="forminput">
+						<input name="email" type="email" class="forminput">
+						<input type="tel" class="form__input tel" name="phone" placeholder="Введите ваш телефон">
+						<button class="button button__form" type="submit" onclick="window.location.href='thanks.html'">Узнать
+							стоимость</button>
 					</form>
 				</div>
 			</div>
@@ -351,7 +368,7 @@
 								<li>На поиск ушло: 2 дня</li>
 								<li>Владельцев по ПТС: 2</li>
 								<li>Результат проверки: Отличное состояние,
-								крашеные элементы отстутствуют</li>
+									крашеные элементы отстутствуют</li>
 								<li>Машина после ТО: да</li>
 								<li>Начальная стоимость: 850 000</li>
 								<li>Конечная стоимость: 770 000</li>
@@ -372,7 +389,7 @@
 								<li>На поиск ушло: 2 дня</li>
 								<li>Владельцев по ПТС: 1</li>
 								<li>Результат проверки: Отличное состояние,
-								косметический окрас крыло и дверь</li>
+									косметический окрас крыло и дверь</li>
 								<li>Машина после ТО: да</li>
 								<li>Начальная стоимость: 850 000</li>
 								<li>Конечная стоимость: 770 000</li>
@@ -415,18 +432,18 @@
 					<div class="warranty__item">
 						<div class="warranty__logo"></div>
 						<p class="warranty__desc">2 месяца гарантии
-						технического состояния</p>
+							технического состояния</p>
 					</div>
 					<div class="warranty__item">
 						<div class="warranty__logo"></div>
 						<p class="warranty__desc">Гарантия юридической
-						чистоты</p>
+							чистоты</p>
 					</div>
 					<div class="warranty__item">
 						<div class="warranty__logo"></div>
 						<p class="warranty__desc">1 год гарантии<br>на
-						ЛКП - лакокрасочное
-						покрытие</p>
+							ЛКП - лакокрасочное
+							покрытие</p>
 					</div>
 				</div>
 			</div>
@@ -440,13 +457,14 @@
 				<ul>
 					<li>Комплексная диагностика авто перед покупкой</li>
 					<li>Поиск и проверка автомобиля
-					квалифицированными специалистами</li>
+						квалифицированными специалистами</li>
 					<li>Юридическая проверка, оформление документов, проверка
-					по базам ГИБДД и залоговых обязательств</li>
+						по базам ГИБДД и залоговых обязательств</li>
 					<li>Кросс-проверка с участием 2 независимых экспертов</li>
 				</ul>
 				<div class="overpayment__buttom">
-					<a class="button button__main button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Оставить заявку</a>
+					<a class="button button__main button-click" data-fancybox data-src="#hidden-content"
+						href="javascript:;">Оставить заявку</a>
 					<p>от <span>11000 руб</span></p>
 				</div>
 			</div>
@@ -463,12 +481,13 @@
 						<div class="card__content">
 							<h3 class="card__title">Автоэксперт на день</h3>
 							<p class="card__desc">Сопровождение квалифицированного
-							специалиста. Оперативный поиск и объезд
-							продавцов. Выявление заведомо ложных
-							объявлений и мошенников. Неограниченное
-							количество просматриваемых машин</p>
+								специалиста. Оперативный поиск и объезд
+								продавцов. Выявление заведомо ложных
+								объявлений и мошенников. Неограниченное
+								количество просматриваемых машин</p>
 							<p class="card__price">от 7 000 руб</p>
-							<a class="button button__card button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Узнать стоимость</a>
+							<a class="button button__card button-click" data-fancybox data-src="#hidden-content"
+								href="javascript:;">Узнать стоимость</a>
 						</div>
 					</div>
 					<div class="card__item">
@@ -478,13 +497,14 @@
 						<div class="card__content">
 							<h3 class="card__title">Бесплатная консультация</h3>
 							<p class="card__desc">Вас консультирует специалист call-центра
-							по любым вопросам. Начиная от подбора
-							марки и модели авто, заканчивая консультацией
-							в режиме реального времени при оформлении
-							сделки купли/продажи авто с анализом
-							правильности составленных документов.</p>
+								по любым вопросам. Начиная от подбора
+								марки и модели авто, заканчивая консультацией
+								в режиме реального времени при оформлении
+								сделки купли/продажи авто с анализом
+								правильности составленных документов.</p>
 							<p class="card__price">0 руб</p>
-							<a class="button button__card button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
+							<a class="button button__card button-click" data-fancybox data-src="#hidden-content"
+								href="javascript:;">Получить консультацию</a>
 						</div>
 					</div>
 					<div class="card__item">
@@ -494,13 +514,14 @@
 						<div class="card__content">
 							<h3 class="card__title">Комплексная диагностика</h3>
 							<p class="card__desc">Проверка технического состояния выбранного
-							вами автомобиля. Диагностический лист с
-							рекомендациями. Оценка действительной
-							стоимости автомобиля. Оценка целесообразности
-							покупки. Аргументированный торг с продавцом
-							Проверка по базам ГИБДД и залоговых обязательств</p>
+								вами автомобиля. Диагностический лист с
+								рекомендациями. Оценка действительной
+								стоимости автомобиля. Оценка целесообразности
+								покупки. Аргументированный торг с продавцом
+								Проверка по базам ГИБДД и залоговых обязательств</p>
 							<p class="card__price">от 2 000 руб</p>
-							<a class="button button__card button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать диагностику</a>
+							<a class="button button__card button-click" data-fancybox data-src="#hidden-content"
+								href="javascript:;">Заказать диагностику</a>
 						</div>
 					</div>
 				</div>
@@ -513,8 +534,8 @@
 				<h2>Приведи друга и <span>получи 5000р</span></h2>
 				<p class="friends__main">В нашей компании с каждого приведенного друга можно получить 5000 рублей по услуге
 					автоподбор</p>
-				<a class="button button__main button-click" data-fancybox data-src="#hidden-content"
-					href="javascript:;">Получи бесплатную консультацию</a>
+				<a class="button button__main button-click" data-fancybox data-src="#hidden-content" href="javascript:;">Получи
+					бесплатную консультацию</a>
 			</div>
 		</div>
 	</section>
@@ -526,24 +547,24 @@
 					<div class="risk__item">
 						<p class="risk__title">Деньгами</p>
 						<p class="risk__desc">При недостаточном опыте вы можете купить
-						автомобиль с рядом скрытых дефектов, что
-						в последствии отнимет много ваших денег
-						и нервов на ремонт.</p>
+							автомобиль с рядом скрытых дефектов, что
+							в последствии отнимет много ваших денег
+							и нервов на ремонт.</p>
 					</div>
 					<div class="risk__item">
 						<p class="risk__title">Временем</p>
 						<p class="risk__desc">Вы потеряете огромное количество времени на
-						выезды по заведомо плохим предложениям.
-						Мы же это будем делать за вас и сообщать
-						вам информацию в ежедневном отчете.</p>
+							выезды по заведомо плохим предложениям.
+							Мы же это будем делать за вас и сообщать
+							вам информацию в ежедневном отчете.</p>
 					</div>
 					<div class="risk__item">
 						<p class="risk__title">Здоровьем</p>
 						<p class="risk__desc">Сэкономив сейчас несколько тысяч рублей
-						вы рискуете в будущем своим здоровьем,
-						а иногда и жизнью. Ведь без нужных навыков
-						вам будет сложно определить роковые
-						неисправности.</p>
+							вы рискуете в будущем своим здоровьем,
+							а иногда и жизнью. Ведь без нужных навыков
+							вам будет сложно определить роковые
+							неисправности.</p>
 					</div>
 				</div>
 			</div>
@@ -555,80 +576,83 @@
 				<h2>Раскрываем тайны рынка подержанных авто</h2>
 				<div class="secret__main">
 					<div class="secret__tabs">
-								<div class="accordion">Как меня могут обмануть при покупке подержанного авто?</div>
-								<div class="accordion-content">
-									<p>Среди объявлений можно найти любопытные. Цена за авто в этих объявлениях
-									значительно ниже других. Продавцы часто объясняют это необходимостью
-									срочной продажи авто - якобы нужны деньги, поэтому и стоит так дешево.
-									Но чудес не бывает и в реальности такие объявления предлагают
-									востановленные авто после крупного ДТП, «утопленников», распилы,
-									авто со скрытыми техническими дефектами или краденные.
-									</p>
-								</div>
-								<div class="accordion">Правда ли что вы собьете цену при покупке авто?</div>
-								<div class="accordion-content">
-									<p>Внешне автомобиль может не вызывать сомнений, но если углубиться
-									и раскопать все, что скрывает продавец, то можно найти ряд параметров,
-									зацепившись за которые в большинстве случаев удается добиться обоснованного
-									снижения цены. Продавцы не глупы и дают скидку, понимая, что скрыть найденные
-									изъяны авто и продать его по завышенной цене им теперь не удастся
-									</p>
-								</div>
-								<div class="accordion">Сколько в среднем уходит времени
-								на подбор и покупку авто?</div>
-								<div class="accordion-content">
-									<p>Самый быстрый подбор автомобиля мы произвели за 2 часа. Да и такое бывает!
-									Часто подбор авто не длится более 7 дней, т.к у нас имеется большой опыт работы
-									и много специалистов, которые готовы вам помочь.
-									</p>
-								</div>
-								<div class="accordion">Можно ли купить автомобиль,
-								не требующий вложений?</div>
-								<div class="accordion-content">
-									<p>Да можно. Мы бы даже сказали - нужно! Но нужно понимать, что около 60%
-									автомобилей с пробегом продаются в связи с грядущим ремонтом.
-									Таким образом, нынешний собственник хочет сэкономить свои средства, а еще
-									лучше приумножить их за счет продажи. Поэтому поддержанные автомобили
-									требуют особого внимания!
-									</p>
-								</div>
+						<div class="accordion">Как меня могут обмануть при покупке подержанного авто?</div>
+						<div class="accordion-content">
+							<p>Среди объявлений можно найти любопытные. Цена за авто в этих объявлениях
+								значительно ниже других. Продавцы часто объясняют это необходимостью
+								срочной продажи авто - якобы нужны деньги, поэтому и стоит так дешево.
+								Но чудес не бывает и в реальности такие объявления предлагают
+								востановленные авто после крупного ДТП, «утопленников», распилы,
+								авто со скрытыми техническими дефектами или краденные.
+							</p>
+						</div>
+						<div class="accordion">Правда ли что вы собьете цену при покупке авто?</div>
+						<div class="accordion-content">
+							<p>Внешне автомобиль может не вызывать сомнений, но если углубиться
+								и раскопать все, что скрывает продавец, то можно найти ряд параметров,
+								зацепившись за которые в большинстве случаев удается добиться обоснованного
+								снижения цены. Продавцы не глупы и дают скидку, понимая, что скрыть найденные
+								изъяны авто и продать его по завышенной цене им теперь не удастся
+							</p>
+						</div>
+						<div class="accordion">Сколько в среднем уходит времени
+							на подбор и покупку авто?</div>
+						<div class="accordion-content">
+							<p>Самый быстрый подбор автомобиля мы произвели за 2 часа. Да и такое бывает!
+								Часто подбор авто не длится более 7 дней, т.к у нас имеется большой опыт работы
+								и много специалистов, которые готовы вам помочь.
+							</p>
+						</div>
+						<div class="accordion">Можно ли купить автомобиль,
+							не требующий вложений?</div>
+						<div class="accordion-content">
+							<p>Да можно. Мы бы даже сказали - нужно! Но нужно понимать, что около 60%
+								автомобилей с пробегом продаются в связи с грядущим ремонтом.
+								Таким образом, нынешний собственник хочет сэкономить свои средства, а еще
+								лучше приумножить их за счет продажи. Поэтому поддержанные автомобили
+								требуют особого внимания!
+							</p>
+						</div>
 
 					</div>
 					<div class="form__header">
 						<p class="form-main__title">Узнайте стоимость подбора прямо сейчас!</p>
-						<form action="#" id="form" class="form">
+						<form action="send.php" id="form4" class="form" method="post">
+							<input name="name" type="text" class="forminput">
+							<input name="email" type="email" class="forminput">
 							<input type="tel" class="form__input tel" name="phone" id="phone" placeholder="Введите ваш телефон">
-							<button class="button button__form" type="submit">Узнать стоимость</button>
+							<button class="button button__form" type="submit" onclick="window.location.href='thanks.html'">Узнать
+								стоимость</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 
-			<div class="container-fluid container-pt">
-				<div class="stat__wrap stat-secret stat-slide-secret">
-					<div class="stat__item stat-secret__item">
-						<p class="stat__title">8%</p>
-						<p class="stat__desc">Авто "утопленники"</p>
-					</div>
-					<div class="stat__item stat-secret__item">
-						<p class="stat__title">Более<br>80%</p>
-						<p class="stat__desc">Битые автомобили</p>
-					</div>
-					<div class="stat__item stat-secret__item">
-						<p class="stat__title">15%</p>
-						<p class="stat__desc">Краденных автомобилей</p>
-					</div>
-					<div class="stat__item stat-secret__item">
-						<p class="stat__title">23%</p>
-						<p class="stat__desc">Требуют ремонта</p>
-					</div>
-					<div class="stat__item stat-secret__item">
-						<p class="stat__title">3,2%</p>
-						<p class="stat__desc">Хороших авто, не требующие никаких вложений</p>
-					</div>
+		<div class="container-fluid container-pt">
+			<div class="stat__wrap stat-secret stat-slide-secret">
+				<div class="stat__item stat-secret__item">
+					<p class="stat__title">8%</p>
+					<p class="stat__desc">Авто "утопленники"</p>
+				</div>
+				<div class="stat__item stat-secret__item">
+					<p class="stat__title">Более<br>80%</p>
+					<p class="stat__desc">Битые автомобили</p>
+				</div>
+				<div class="stat__item stat-secret__item">
+					<p class="stat__title">15%</p>
+					<p class="stat__desc">Краденных автомобилей</p>
+				</div>
+				<div class="stat__item stat-secret__item">
+					<p class="stat__title">23%</p>
+					<p class="stat__desc">Требуют ремонта</p>
+				</div>
+				<div class="stat__item stat-secret__item">
+					<p class="stat__title">3,2%</p>
+					<p class="stat__desc">Хороших авто, не требующие никаких вложений</p>
 				</div>
 			</div>
+		</div>
 
 	</section>
 	<section class="time f-black" id="menu-item-6">
@@ -640,38 +664,38 @@
 					<div class="time__item">
 						<p class="time__title">1. Бесплатная консультация</p>
 						<p class="time__desc">Оставьте заявку или позвоните нам и
-						получите ответы на все ваши вопросы</p>
+							получите ответы на все ваши вопросы</p>
 					</div>
 					<div class="time__item">
 						<p class="time__title">2. Подписание
-						договора</p>
+							договора</p>
 						<p class="time__desc">Ознакомьтесь с договором, вашими
-						гарантиями и оплатой наших услуг
-						(можно удаленно).</p>
+							гарантиями и оплатой наших услуг
+							(можно удаленно).</p>
 					</div>
 					<div class="time__item">
 						<p class="time__title">3. Поиск и
-						подбор авто</p>
+							подбор авто</p>
 						<p class="time__desc">Подберем варианты авто по
-						вашим параметрам или предложим
-						свои варианты по вашему бюджету</p>
+							вашим параметрам или предложим
+							свои варианты по вашему бюджету</p>
 					</div>
 					<div class="time__item">
 						<p class="time__title">4. Проверка
-						авто</p>
+							авто</p>
 						<p class="time__desc">С вашим участием или без мы проверим
-						авто по 147 пунктам. Вы получаете
-						подробный отчет</p>
+							авто по 147 пунктам. Вы получаете
+							подробный отчет</p>
 					</div>
 					<div class="time__item">
 						<p class="time__title">5. Покупка</p>
 						<p class="time__desc">Помогаем с оформлением сделки,
-						проверяем правильность документов</p>
+							проверяем правильность документов</p>
 					</div>
 					<div class="time__item">
 						<p class="time__title">6. Гарантии</p>
 						<p class="time__desc">Вы получите тройную гарантию
-						на выбранный автомобиль</p>
+							на выбранный автомобиль</p>
 					</div>
 				</div>
 			</div>
@@ -683,16 +707,20 @@
 				<div class="answer">
 					<p>
 						Получите <span>ответы на любые вопросы связанные
-						с рынком</span> авто на данное время. Кроме того,
+							с рынком</span> авто на данное время. Кроме того,
 						цену на наши услуги сторгуем у продавца авто!
 					</p>
 				</div>
 				<div class="choice__form form-main">
 					<h2>Уже <span>определились с выбором</span> авто или бюджетом?</h2>
 					<p>Оставьте заявку для <span>бесплатной консультации</span> у нашего эксперта</p>
-					<form action="#" id="form" class="form">
-						<input type="tel" class="form__input form__input-w tel" name="phone" id="phone" placeholder="Введите ваш телефон">
-						<button class="button button__main-form" type="submit">Оставить заявку</button>
+					<form action="send.php" id="form5" class="form" method="post">
+						<input name="name" type="text" class="forminput">
+						<input name="email" type="email" class="forminput">
+						<input type="tel" class="form__input form__input-w tel" name="phone" id="phone"
+							placeholder="Введите ваш телефон">
+						<button class="button button__main-form" type="submit" onclick="window.location.href='thanks.html'">Оставить
+							заявку</button>
 					</form>
 				</div>
 			</div>
@@ -714,15 +742,17 @@
 					</div>
 					<div class="footer-menu__phone">
 						<a href="tel:+78129880508" class="footer-phone">8 (812)-988-05-08</a>
-						<a class="footer-phone__link" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать звонок</a>
+						<a class="footer-phone__link" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать
+							звонок</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-<script src="./js/jq341.js"></script>
-<script src="./js/slick.min.js"></script>
-<script src="./js/jquery.fancybox.min.js"></script>
-<script src="./js/main.js"></script>	
+	<script src="./js/jq341.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/jquery.fancybox.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
+
 </html>

@@ -4,7 +4,7 @@ window.onload = function () {
 /* -----scrollTop------- */
 $(function () {
 	$('.nav-top__item').click(function () {
-		$('body, html').animate({ scrollTop: $('#' + $(this).data('value')).offset().top -50 }, 1500);
+		$('body, html').animate({ scrollTop: $('#' + $(this).data('value')).offset().top - 50 }, 1500);
 	});
 });
 /* ------fixed-top------- */
@@ -61,7 +61,7 @@ let labelTab1 = document.getElementById('labelTab1');
 let labelTab2 = document.getElementById('labelTab2');
 
 
-let tabFun = function() {
+let tabFun = function () {
 	if (tab1.checked) {
 		labelTab1.style.borderRight = 'none';
 		labelTab2.style.borderRight = '1px solid #000';
@@ -103,9 +103,9 @@ for (let i = 0; i < accordions.length; i++) {
 let modalTitle = document.getElementById('modal-title');
 let buttonClick = document.getElementsByClassName('button-click');
 
-let title = function() {
+let title = function () {
 	for (let i = 0; i < buttonClick.length; i++) {
-		buttonClick[i].addEventListener('click', function() {
+		buttonClick[i].addEventListener('click', function () {
 			modalTitle.textContent = buttonClick[i].textContent
 		})
 	}
@@ -115,19 +115,19 @@ title();
 let autoCheck = document.getElementById('autoCheck');
 let tooltips = document.getElementsByClassName("tooltip");
 
-let tooltipsClick = function() {
+let tooltipsClick = function () {
 	let wimWidth = window.innerWidth;
 	if (wimWidth > 640) {
 		for (let i = 0; i < tooltips.length; i++) {
-			tooltips[i].onclick = function() {
-	
+			tooltips[i].onclick = function () {
+
 				this.classList.toggle('is-opens');
-		
+
 				let tooltipsContent = this.firstElementChild;
-	
+
 				if (!tooltips[i].classList.contains('is-opens')) {
 					tooltipsContent.style.opacity = '0';
-					setTimeout(function() {
+					setTimeout(function () {
 						tooltipsContent.style.display = 'none';
 						tooltips[i].classList.remove('is-opens');
 					}, 301);
@@ -137,8 +137,8 @@ let tooltipsClick = function() {
 						tooltipsContent.style.opacity = '1';
 					}, 1);
 				}
-	
-				autoCheck.addEventListener('click', function(el) {
+
+				autoCheck.addEventListener('click', function (el) {
 					if ((!tooltips[i].classList.contains('is-opens')) || (!el.target.classList.contains('tooltip'))) {
 						tooltipsContent.style.opacity = '0';
 						setTimeout(function () {
@@ -160,40 +160,43 @@ tooltipsClick();
 $(document).ready(function ($) {
 
 	// Отправляет данные из формы на сервер и получает ответ
-	$('#form').on('submit', function (event) {
+	$('form').on('submit', function (event) {
 
 		event.preventDefault();
+		var formID = $(this).attr('id'); // Получение ID формы
+		var formNm = $('#' + formID);
 
-		var form = $('#form'),
-			// button = $('#button'),
-			answer = $('#answer'),
-			loader = $('#loader');
+		// var form = $('#form'),
+		// 	// button = $('#button'),
+		// 	answer = $('#answer'),
+		// 	loader = $('#loader');
 
 		$.ajax({
 			url: 'send.php',
 			type: 'POST',
-			data: form.serialize(),
+			data: formNm.serialize(),
 			beforeSend: function () {
-				answer.empty();
-				loader.fadeIn();
+				// answer.empty();
+				// loader.fadeIn();
 			},
 
 			success: function (result) {
-				setTimeout(function () {
-					loader.fadeOut();
-					answer.css('display', 'flex');
-					answer.text('Сообщение успешно отправлено.');
-					// });
-				}, 600);
-				setTimeout(function () {
-					modalHide();  //см.функции выше
-					$('#form').trigger("reset");
+				// setTimeout(function () {
+				// 	loader.fadeOut();
+				// 	answer.css('display', 'flex');
+				// 	answer.text('Сообщение успешно отправлено.');
+				// 	// });
+				// }, 600);
+				// setTimeout(function () {
+				// 	modalHide();  //см.функции выше
+				// 	$('#form').trigger("reset");
 
-				}, 1500);
+				// }, 1500);
 				console.log('ok');
 			},
 
 			error: function () {
+				console.log('хрен');
 				loader.fadeOut(600, function () {
 					answer.css('display', 'flex');
 					answer.text('Произошла ошибка! Попробуйте позже.');
@@ -230,7 +233,7 @@ $(window).scroll(function () {
 	var fromTop = $(this).scrollTop() + topMenuHeight;
 
 	var cur = scrollItems.map(function () {
-		if (($(this).offset().top -50)< fromTop)
+		if (($(this).offset().top - 50) < fromTop)
 			return this;
 	});
 
@@ -330,13 +333,13 @@ function slickifySecret() {
 
 
 
-let reportWindowSize = function() {
+let reportWindowSize = function () {
 	let ww = window.innerWidth;
 	if (ww < 1600) {
 		slickifySecret();
 	}
 }
-let reportWindowSize11 = function() {
+let reportWindowSize11 = function () {
 	let ww1 = window.innerWidth;
 	if (ww1 < 1200) {
 		slickifyTop();
@@ -355,7 +358,7 @@ let body = document.getElementById('body');
 
 let menuActivate = document.querySelectorAll('.mobile-menu__activate');
 for (let i = 0; i < menuActivate.length; i++) {
-	menuActivate[i].addEventListener('click', function() {
+	menuActivate[i].addEventListener('click', function () {
 		if (mobileMenu.classList.contains('menu-active')) {
 			mobileMenu.classList.remove('menu-active')
 			mobileMenuS.classList.remove('mobile-menu__s-active')
@@ -365,9 +368,9 @@ for (let i = 0; i < menuActivate.length; i++) {
 			mobileMenuS.classList.add('mobile-menu__s-active')
 			body.style.overflowY = 'hidden';
 		};
-		
+
 	})
 }
-	
+
 /* ------------------- */
 

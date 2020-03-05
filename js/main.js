@@ -349,3 +349,9 @@ reportWindowSize11();
 
 
 
+/* -------------------- */
+let buttonOpen = document.getElementById('buttonOpen');
+let mobileMenu = document.getElementById('mobileMenu');
+buttonOpen.addEventListener('click', function() {
+	mobileMenu.classList.toggle('menu-active');
+})

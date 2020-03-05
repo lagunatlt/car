@@ -207,6 +207,7 @@ $(document).ready(function ($) {
 		});
 	});
 });
+
 /* -------------------------- */
 
 // Cache selectors

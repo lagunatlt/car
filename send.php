@@ -16,13 +16,13 @@ $mail = new PHPMailer;
 $mail->isSMTP(); 
 $mail->Host = 'smtp.yandex.ru';  
 $mail->SMTPAuth = true;                      
-$mail->Username = 'polotentsesushitelei'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-$mail->Password = 'chljotsisvbakcdo'; // Ваш пароль от почты, настройка приложений
+$mail->Username = 'avtopodborstas'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+$mail->Password = 'revjtlwzwagfibmz'; // Ваш пароль от почты, настройка приложений
 $mail->SMTPSecure = 'ssl';                            
 $mail->Port = 465;
-$mail->setFrom('polotentsesushitelei@yandex.ru', 'Ремонт'); // Ваш Email, Имя
-$mail->addAddress('polotentsesushitelei@yandex.ru'); // Email получателя
-$mail->addAddress('polotentsesushitelei@yandex.ru'); // Еще один email, если нужно.
+$mail->setFrom('avtopodborstas@yandex.ru', 'Ремонт'); // Ваш Email, Имя
+$mail->addAddress('avtopodborstas@yandex.ru'); // Email получателя
+$mail->addAddress('avtopodborstas@yandex.ru'); // Еще один email, если нужно.
 
 if(!in_array($ipAddr, $badIP) && empty($spam) && empty($spam1)) { // если не заполнено скрытое поле и если IP-адрес не находится в нашем чёрном списке
 

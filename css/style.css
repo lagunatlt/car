@@ -1756,3 +1756,7 @@ body.compensate-for-scrollbar {
 #hidden-content {
   border-radius: 10px;
 }
+#name,
+#email {
+  display: none;
+}

@@ -16,7 +16,9 @@
 		<div class="form__header form__header-bg form__modal">
 			<p class="form-main__title" id="modal-title">Узнайте стоимость подбора</p>
 			<p class="form-main__title">прямо сейчас!</p>
-			<form action="#" id="form" class="form">
+			<form action="send.php" id="form" class="form" method="post">
+				<input id="name" name="name" type="text">
+				<input id="email" name="email" type="email">
 				<input type="tel" class="form__input tel" name="phone" id="phone" placeholder="Введите ваш телефон">
 				<button class="button button__form" type="submit">Заказать звонок</button>
 			</form>

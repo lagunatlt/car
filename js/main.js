@@ -154,8 +154,6 @@ let tooltipsClick = function() {
 };
 
 tooltipsClick();
-
-
 /* -----------tooltips-end------- */
 
 /* -------------form send----------- */
@@ -343,7 +341,6 @@ let reportWindowSize11 = function() {
 		slickifyTop();
 	}
 }
-// slickifyTop();
 reportWindowSize();
 reportWindowSize11();
 
@@ -372,3 +369,4 @@ for (let i = 0; i < menuActivate.length; i++) {
 }
 	
 /* ------------------- */
+
